@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/alan/Downloads/WalnutShell/app/libs/jaxen-1.1.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="9f5d3c5974dbe5cf69c2c2ec7d8a4eb6e0fce7f9">
+        <dex dex="/Users/alan/Downloads/WalnutShell/app/build/intermediates/pre-dexed/debug/jaxen-1.1.1_7d49e107eb8f8686d011a44eb9d059eb380e405c.jar" />
+    </item>
+    <item
+        jar="/Users/alan/Downloads/WalnutShell/app/libs/jsoup-1.7.2.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="872693211fd68d1c4e116cf90021603207725e19">
+        <dex dex="/Users/alan/Downloads/WalnutShell/app/build/intermediates/pre-dexed/debug/jsoup-1.7.2_8fd50fdeecfc5c79f9d898d46f88368c1c6e5fda.jar" />
+    </item>
+    <item
+        jar="/Users/alan/Documents/sdk/android-sdk-macosx/extras/android/m2repository/com/android/support/support-v4/18.0.0/support-v4-18.0.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="44ec51e9d395a47aab135e5e1b556c0007442156">
+        <dex dex="/Users/alan/Downloads/WalnutShell/app/build/intermediates/pre-dexed/debug/support-v4-18.0.0_5dc75b428cbe370bc0b2de16f2ef9d7efe0f826c.jar" />
+    </item>
+    <item
+        jar="/Users/alan/Downloads/WalnutShell/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="8f11f56e350eacabf2273f646d981356eea0ed77">
+        <dex dex="/Users/alan/Downloads/WalnutShell/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-18.0.0_2035a921ec7e6d9fb2199d4719744b7cffc14ed8.jar" />
+    </item>
+    <item
+        jar="/Users/alan/Downloads/WalnutShell/app/libs/dom4j-1.6.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="5d3ccc056b6f056dbf0dddfdf43894b9065a8f94">
+        <dex dex="/Users/alan/Downloads/WalnutShell/app/build/intermediates/pre-dexed/debug/dom4j-1.6.1_4b016f42fa3ee3ff908890b6e752832602c00a9c.jar" />
+    </item>
+
+</items>

@@ -1,0 +1,58 @@
+<resources>
+
+    
+    <!-- Color about Aplication -->
+    <color name="backgroud">#DDDDDD</color>
+    <color name="welcom_backgroud">#FFFFFF</color>
+    <!-- <color name="backgroud">#E5E5E5</color> -->
+    
+    <!-- Color about Drawer view -->
+    <color name="drawer_backgroud">#DDDDDD</color>
+    <color name="drawer_item_title">#000000</color>
+    <color name="drawer_item_backgroud">#DDDDDD</color>
+    <color name="drawer_item_create_time">#AAAAAA</color>
+    <color name="drawer_section_backgourd">#A6A6A6</color>
+    <color name="drawer_section_text">#000000</color>
+    
+    <!-- Color about ActionBar -->
+    <color name="actionbar_backgroud">#BF8141</color>
+    <color name="actionbar_tab_backgroud">#CDCDCD</color>
+    <color name="actionbar_tab_text">#000000</color>
+    <color name="actionbar_title_text">#000000</color>
+    <color name="actionbar_menu_text">#000000</color>
+   	
+    <!-- Color about Newspaper View -->
+    <color name="newspaper_backgourd">#DDDDDD</color>
+    <color name="newspaper_section_name">#FFFFFF</color>
+    <color name="newspaper_section_backgourd">#A6A6A6</color>
+    <color name="newspaper_item_backgourd">#FFFFFF</color>
+    <color name="newspaper_item_title">#000000</color>
+    <color name="newspaper_item_source_time">#777777</color>
+    <color name="newspaper_item_summary">#AAAAAA</color>
+    
+    <!-- Color about Article View -->
+    <color name="article_backgroud">#E5E5E5</color>
+    <color name="article_title">#000000</color>
+    <color name="article_sec_title">#777777</color>
+    <color name="article_text">#000000</color>
+    
+    <!-- Color about Add Source View -->
+    
+    <!-- Color about choose Source View -->
+    <color name="choose_source_backgourd">#DDDDDD</color>
+    <color name="choose_source_section_name">#000000</color>
+    <color name="choose_source_section_backgourd">#A6A6A6</color>
+    <color name="choose_source_item_backgourd">#FFFFFF</color>
+    <color name="choose_source_item_title">#AAAAAA</color>
+    <color name="choose_source_button_backgroud">#FFFFFF</color>
+    <color name="choose_source_button_text">#000000</color>
+    <color name="choose_source_button_line">#DDDDDD</color>
+    
+    <!-- Color about add Source View -->
+    <color name="add_source_backgourd">#DDDDDD</color>
+    <color name="add_source_button_line">#DDDDDD</color>
+    
+    <!-- Color about choose Waiting View -->
+	<color name="waiting_text">#AAAAAA</color>
+	
+</resources>

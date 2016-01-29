@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:background="@color/newspaper_item_backgourd">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="@color/newspaper_backgourd" />
+    <TextView
+        android:id="@+id/newspaper_item_title_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/newspaper_section_height"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:background="@color/newspaper_section_backgourd"
+        android:textStyle="bold"
+        android:text="@string/default_title"
+        android:textColor="@color/newspaper_section_name"
+        android:textSize="20sp" />
+
+</LinearLayout>

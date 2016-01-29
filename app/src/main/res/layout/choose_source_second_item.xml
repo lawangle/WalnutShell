@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/choose_source_item_backgourd"
+    android:orientation="vertical" >
+    
+    	<TextView
+            android:id="@+id/choose_source_sec_item_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:background="@color/choose_source_item_backgourd"
+            android:padding="5dp"
+            android:textSize="18sp"
+            android:textColor="@color/choose_source_item_title"
+            android:text="@string/default_summary"/>
+
+</LinearLayout>

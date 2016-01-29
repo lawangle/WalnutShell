@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/add_source_backgourd"
+    android:orientation="vertical" >
+
+
+    <RelativeLayout 
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/add_source_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:hint="输入URL..."
+        android:ems="10" >
+        
+      <!-- <GridView 
+	    android:id="@+id/gridview"
+	    android:layout_width="fill_parent"  
+	    android:layout_height="wrap_content"
+	    android:columnWidth="90dp"
+	    android:numColumns="auto_fit"
+	    android:verticalSpacing="10dp"
+	    android:horizontalSpacing="10dp"
+	    android:stretchMode="columnWidth"
+	    android:gravity="center"
+	    /> -->
+
+    </EditText>
+
+    
+    </RelativeLayout>
+
+<!--     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="horizontal" >
+
+        <Button
+        android:id="@+id/button_add_source_goto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      android:text="@string/confirm"/>
+        
+        <Button
+            android:id="@+id/button_add_source_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher" 
+            android:text="@string/cancel"/>
+
+    </LinearLayout>
+ -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingTop="10dp"
+        android:gravity="bottom"
+        android:orientation="horizontal" >
+
+        <Button
+           android:id="@+id/button_add_source_goto"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:background="@color/choose_source_button_backgroud"
+            android:textColor="@color/choose_source_button_text"
+           android:text="@string/confirm" />    
+       
+		<TextView 
+		    android:layout_width="1dp"
+           android:layout_height="match_parent"
+           android:background="@color/add_source_button_line"/>
+        <Button
+            android:id="@+id/button_add_source_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/choose_source_button_backgroud"
+            android:textColor="@color/choose_source_button_text"
+            android:text="@string/cancel" />
+    </LinearLayout>
+    
+</LinearLayout>

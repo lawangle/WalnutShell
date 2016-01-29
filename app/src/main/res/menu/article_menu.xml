@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <group android:id="@+id/menugroup_article" >
+        <item
+            android:id="@+id/menu_collect_article"
+            android:icon="@drawable/app_logo"
+            android:showAsAction="ifRoom|withText"
+            android:title="@string/menu_collect_article"/>
+
+    </group>
+
+</menu>
