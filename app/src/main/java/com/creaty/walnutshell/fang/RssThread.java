@@ -16,10 +16,10 @@ import com.creaty.walnutshell.basic.Source;
 public class RssThread implements Callable<Source> {
 
 	private String url;
-	private int seq;//RSSÔ´µÄÐòºÅ¶¨Òå£¿
+	private int seq;//RSSÔ´ï¿½ï¿½ï¿½ï¿½Å¶ï¿½ï¿½å£¿
 	public RssThread(String url,int seq) {
 		// TODO Auto-generated constructor stub
-		this.url = url;
+		this.url = url;;
 		this.seq = seq;
 	}
 	@Override
@@ -31,7 +31,7 @@ public class RssThread implements Callable<Source> {
 		returnValue.type = returnValue.RSS_SOURCE;
 		returnValue.sourceSeq = this.seq;
 		Date date = new Date();
-		returnValue.modified_date = date.getTime();//ÔÝÊ±ÏÈÕâÑù
+		returnValue.modified_date = date.getTime();//ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		ArrayList<Entry> entryList = new ArrayList<Entry>();
 		SAXReader reader = new SAXReader();
 		org.dom4j.Document doc = null;

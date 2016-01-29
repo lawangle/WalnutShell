@@ -2,5 +2,9 @@
     {
         "merged": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/res/merged/debug/layout-v11/abc_action_bar_decor.xml",
         "source": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/res/layout-v11/abc_action_bar_decor.xml"
+    },
+    {
+        "merged": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/res/merged/debug/layout-v11/abc_screen_content_include.xml",
+        "source": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/layout-v11/abc_screen_content_include.xml"
     }
 ]

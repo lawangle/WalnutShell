@@ -5,7 +5,7 @@
     },
     {
         "merged": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_layout.xml",
-        "source": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/res/layout/abc_list_menu_item_layout.xml"
+        "source": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/layout/abc_list_menu_item_layout.xml"
     },
     {
         "merged": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/res/merged/debug/layout/abc_screen.xml",
@@ -16,16 +16,24 @@
         "source": "/Users/alan/Downloads/WalnutShell/app/src/main/res/layout/gridmenu.xml"
     },
     {
-        "merged": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/res/merged/debug/layout/abc_action_bar_view_list_nav_layout.xml",
-        "source": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/res/layout/abc_action_bar_view_list_nav_layout.xml"
-    },
-    {
         "merged": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/res/merged/debug/layout/fragment_no_news.xml",
         "source": "/Users/alan/Downloads/WalnutShell/app/src/main/res/layout/fragment_no_news.xml"
     },
     {
+        "merged": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/res/merged/debug/layout/abc_action_bar_view_list_nav_layout.xml",
+        "source": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/layout/abc_action_bar_view_list_nav_layout.xml"
+    },
+    {
+        "merged": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/res/merged/debug/layout/abc_screen_toolbar.xml",
+        "source": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/layout/abc_screen_toolbar.xml"
+    },
+    {
         "merged": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/res/merged/debug/layout/newspaper_section_del_item.xml",
         "source": "/Users/alan/Downloads/WalnutShell/app/src/main/res/layout/newspaper_section_del_item.xml"
+    },
+    {
+        "merged": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/res/merged/debug/layout/abc_screen_simple_overlay_action_mode.xml",
+        "source": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/layout/abc_screen_simple_overlay_action_mode.xml"
     },
     {
         "merged": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/res/merged/debug/layout/drawer_list_seoncd_no_image_item.xml",
@@ -33,7 +41,7 @@
     },
     {
         "merged": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/res/merged/debug/layout/abc_popup_menu_item_layout.xml",
-        "source": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/res/layout/abc_popup_menu_item_layout.xml"
+        "source": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/layout/abc_popup_menu_item_layout.xml"
     },
     {
         "merged": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/res/merged/debug/layout/drawer_list_second_image_only_item.xml",
@@ -49,7 +57,7 @@
     },
     {
         "merged": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view.xml",
-        "source": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/res/layout/abc_activity_chooser_view.xml"
+        "source": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/layout/abc_activity_chooser_view.xml"
     },
     {
         "merged": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/res/merged/debug/layout/fragment_article.xml",
@@ -58,6 +66,10 @@
     {
         "merged": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/res/merged/debug/layout/abc_action_bar_decor_overlay.xml",
         "source": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/res/layout/abc_action_bar_decor_overlay.xml"
+    },
+    {
+        "merged": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/res/merged/debug/layout/abc_action_bar_up_container.xml",
+        "source": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/layout/abc_action_bar_up_container.xml"
     },
     {
         "merged": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/res/merged/debug/layout/activity_add_news.xml",
@@ -73,15 +85,15 @@
     },
     {
         "merged": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view_list_item.xml",
-        "source": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/res/layout/abc_activity_chooser_view_list_item.xml"
+        "source": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/layout/abc_activity_chooser_view_list_item.xml"
     },
     {
         "merged": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/res/merged/debug/layout/abc_action_menu_item_layout.xml",
-        "source": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/res/layout/abc_action_menu_item_layout.xml"
+        "source": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/layout/abc_action_menu_item_layout.xml"
     },
     {
         "merged": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/res/merged/debug/layout/abc_search_dropdown_item_icons_2line.xml",
-        "source": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/res/layout/abc_search_dropdown_item_icons_2line.xml"
+        "source": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/layout/abc_search_dropdown_item_icons_2line.xml"
     },
     {
         "merged": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/res/merged/debug/layout/fragment_newspaper.xml",
@@ -108,20 +120,24 @@
         "source": "/Users/alan/Downloads/WalnutShell/app/src/main/res/layout/fragment_no_content.xml"
     },
     {
+        "merged": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/res/merged/debug/layout/abc_screen_content_include.xml",
+        "source": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/layout/abc_screen_content_include.xml"
+    },
+    {
         "merged": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/res/merged/debug/layout/activity_main.xml",
         "source": "/Users/alan/Downloads/WalnutShell/app/src/main/res/layout/activity_main.xml"
     },
     {
         "merged": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/res/merged/debug/layout/support_simple_spinner_dropdown_item.xml",
-        "source": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/res/layout/support_simple_spinner_dropdown_item.xml"
+        "source": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/layout/support_simple_spinner_dropdown_item.xml"
     },
     {
         "merged": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/res/merged/debug/layout/abc_action_mode_bar.xml",
-        "source": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/res/layout/abc_action_mode_bar.xml"
+        "source": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/layout/abc_action_mode_bar.xml"
     },
     {
         "merged": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/res/merged/debug/layout/abc_search_view.xml",
-        "source": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/res/layout/abc_search_view.xml"
+        "source": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/layout/abc_search_view.xml"
     },
     {
         "merged": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/res/merged/debug/layout/fragment_planet.xml",
@@ -141,15 +157,19 @@
     },
     {
         "merged": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/res/merged/debug/layout/abc_expanded_menu_layout.xml",
-        "source": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/res/layout/abc_expanded_menu_layout.xml"
+        "source": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/layout/abc_expanded_menu_layout.xml"
+    },
+    {
+        "merged": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/res/merged/debug/layout/abc_action_mode_close_item_material.xml",
+        "source": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/layout/abc_action_mode_close_item_material.xml"
     },
     {
         "merged": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_radio.xml",
-        "source": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/res/layout/abc_list_menu_item_radio.xml"
+        "source": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/layout/abc_list_menu_item_radio.xml"
     },
     {
         "merged": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/res/merged/debug/layout/abc_action_menu_layout.xml",
-        "source": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/res/layout/abc_action_menu_layout.xml"
+        "source": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/layout/abc_action_menu_layout.xml"
     },
     {
         "merged": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/res/merged/debug/layout/abc_action_bar_tab.xml",
@@ -165,11 +185,15 @@
     },
     {
         "merged": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_icon.xml",
-        "source": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/res/layout/abc_list_menu_item_icon.xml"
+        "source": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/layout/abc_list_menu_item_icon.xml"
     },
     {
         "merged": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/res/merged/debug/layout/fragment_choose_source.xml",
         "source": "/Users/alan/Downloads/WalnutShell/app/src/main/res/layout/fragment_choose_source.xml"
+    },
+    {
+        "merged": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/res/merged/debug/layout/abc_screen_simple.xml",
+        "source": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/layout/abc_screen_simple.xml"
     },
     {
         "merged": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/res/merged/debug/layout/drawer_list_item.xml",
@@ -178,6 +202,10 @@
     {
         "merged": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/res/merged/debug/layout/activity_choose_source.xml",
         "source": "/Users/alan/Downloads/WalnutShell/app/src/main/res/layout/activity_choose_source.xml"
+    },
+    {
+        "merged": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/res/merged/debug/layout/abc_simple_dropdown_hint.xml",
+        "source": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/layout/abc_simple_dropdown_hint.xml"
     },
     {
         "merged": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/res/merged/debug/layout/choose_source_second_item.xml",
@@ -201,7 +229,7 @@
     },
     {
         "merged": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/res/merged/debug/layout/abc_action_bar_title_item.xml",
-        "source": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/res/layout/abc_action_bar_title_item.xml"
+        "source": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/layout/abc_action_bar_title_item.xml"
     },
     {
         "merged": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/res/merged/debug/layout/abc_action_bar_decor_include.xml",
@@ -213,7 +241,7 @@
     },
     {
         "merged": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_checkbox.xml",
-        "source": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/res/layout/abc_list_menu_item_checkbox.xml"
+        "source": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/layout/abc_list_menu_item_checkbox.xml"
     },
     {
         "merged": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/res/merged/debug/layout/fragment_waiting.xml",
