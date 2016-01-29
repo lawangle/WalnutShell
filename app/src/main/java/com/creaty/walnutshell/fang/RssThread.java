@@ -19,7 +19,7 @@ public class RssThread implements Callable<Source> {
 	private int seq;//RSSԴ����Ŷ��壿
 	public RssThread(String url,int seq) {
 		// TODO Auto-generated constructor stub
-		this.url = url;;
+		this.url = url;
 		this.seq = seq;
 	}
 	@Override
