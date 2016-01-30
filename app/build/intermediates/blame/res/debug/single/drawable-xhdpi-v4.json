@@ -1,11 +1,11 @@
 [
     {
-        "merged": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abc_textfield_search_selected_holo_light.9.png",
-        "source": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/res/drawable-xhdpi/abc_textfield_search_selected_holo_light.9.png"
-    },
-    {
         "merged": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abc_tab_selected_holo.9.png",
         "source": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/res/drawable-xhdpi/abc_tab_selected_holo.9.png"
+    },
+    {
+        "merged": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abc_textfield_search_selected_holo_light.9.png",
+        "source": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/res/drawable-xhdpi/abc_textfield_search_selected_holo_light.9.png"
     },
     {
         "merged": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abc_spinner_ab_default_holo_light.9.png",
@@ -40,12 +40,12 @@
         "source": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/drawable-xhdpi-v4/abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
-        "merged": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abc_ic_commit_search_api_holo_light.png",
-        "source": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/res/drawable-xhdpi/abc_ic_commit_search_api_holo_light.png"
+        "merged": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abc_list_pressed_holo_light.9.png",
+        "source": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/res/drawable-xhdpi/abc_list_pressed_holo_light.9.png"
     },
     {
-        "merged": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abc_list_pressed_holo_light.9.png",
-        "source": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/drawable-xhdpi-v4/abc_list_pressed_holo_light.9.png"
+        "merged": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abc_ic_commit_search_api_holo_light.png",
+        "source": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/res/drawable-xhdpi/abc_ic_commit_search_api_holo_light.png"
     },
     {
         "merged": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abc_ab_stacked_solid_dark_holo.9.png",
@@ -77,7 +77,7 @@
     },
     {
         "merged": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abc_list_pressed_holo_dark.9.png",
-        "source": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/drawable-xhdpi-v4/abc_list_pressed_holo_dark.9.png"
+        "source": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/res/drawable-xhdpi/abc_list_pressed_holo_dark.9.png"
     },
     {
         "merged": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abc_ab_transparent_dark_holo.9.png",
@@ -189,11 +189,11 @@
     },
     {
         "merged": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abc_list_longpressed_holo.9.png",
-        "source": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/drawable-xhdpi-v4/abc_list_longpressed_holo.9.png"
+        "source": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/res/drawable-xhdpi/abc_list_longpressed_holo.9.png"
     },
     {
         "merged": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abc_list_focused_holo.9.png",
-        "source": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/drawable-xhdpi-v4/abc_list_focused_holo.9.png"
+        "source": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/res/drawable-xhdpi/abc_list_focused_holo.9.png"
     },
     {
         "merged": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abc_ab_share_pack_holo_dark.9.png",
@@ -261,7 +261,7 @@
     },
     {
         "merged": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abc_list_selector_disabled_holo_light.9.png",
-        "source": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/drawable-xhdpi-v4/abc_list_selector_disabled_holo_light.9.png"
+        "source": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/res/drawable-xhdpi/abc_list_selector_disabled_holo_light.9.png"
     },
     {
         "merged": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abc_textfield_search_selected_holo_dark.9.png",
@@ -289,7 +289,7 @@
     },
     {
         "merged": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abc_list_selector_disabled_holo_dark.9.png",
-        "source": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/drawable-xhdpi-v4/abc_list_selector_disabled_holo_dark.9.png"
+        "source": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/res/drawable-xhdpi/abc_list_selector_disabled_holo_dark.9.png"
     },
     {
         "merged": "/Users/alan/Downloads/WalnutShell/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/abc_ic_ab_back_mtrl_am_alpha.png",

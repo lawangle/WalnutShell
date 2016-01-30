@@ -17,9 +17,7 @@ ADDED from /Users/alan/Downloads/WalnutShell/app/src/main/AndroidManifest.xml:2:
 		ADDED from /Users/alan/Downloads/WalnutShell/app/src/main/AndroidManifest.xml:2:11-69
 uses-sdk
 ADDED from /Users/alan/Downloads/WalnutShell/app/src/main/AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:support-v4:22.0.0] /Users/alan/Downloads/WalnutShell/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:appcompat-v7:22.0.0] /Users/alan/Downloads/WalnutShell/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:22.0.0] /Users/alan/Downloads/WalnutShell/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:18.0.0] /Users/alan/Downloads/WalnutShell/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/AndroidManifest.xml:18:5-42
 	android:targetSdkVersion
 		ADDED from /Users/alan/Downloads/WalnutShell/app/src/main/AndroidManifest.xml:9:9-38
 		INJECTED from /Users/alan/Downloads/WalnutShell/app/src/main/AndroidManifest.xml
@@ -34,9 +32,7 @@ ADDED from /Users/alan/Downloads/WalnutShell/app/src/main/AndroidManifest.xml:11
 		ADDED from /Users/alan/Downloads/WalnutShell/app/src/main/AndroidManifest.xml:11:22-64
 application
 ADDED from /Users/alan/Downloads/WalnutShell/app/src/main/AndroidManifest.xml:13:5-80:19
-MERGED from [com.android.support:support-v4:22.0.0] /Users/alan/Downloads/WalnutShell/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:appcompat-v7:22.0.0] /Users/alan/Downloads/WalnutShell/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:22.0.0] /Users/alan/Downloads/WalnutShell/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:18.0.0] /Users/alan/Downloads/WalnutShell/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/18.0.0/AndroidManifest.xml:19:5-20
 	android:label
 		ADDED from /Users/alan/Downloads/WalnutShell/app/src/main/AndroidManifest.xml:16:9-41
 	android:allowBackup

@@ -27,6 +27,6 @@ dependencies {
     compile files('libs/jaxen-1.1.1.jar')
     compile files('libs/jsoup-1.7.2.jar')
 
-    compile 'com.android.support:support-v4:22.0.0'
-    compile 'com.android.support:appcompat-v7:22.0.0'
+    compile 'com.android.support:support-v4:18.0.0'
+    compile 'com.android.support:appcompat-v7:18.0.0'
 }
