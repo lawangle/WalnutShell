@@ -2,16 +2,23 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android" >
 
     <group android:id="@+id/menugroup_newspaper" >
+        
         <item
-            android:id="@+id/menu_addsource"
-            android:icon="@drawable/add"
+            android:id="@+id/menu_update"
+            android:icon="@drawable/ic_drawer"
             android:showAsAction="ifRoom|withText"
-            android:title="@string/menu_add_source"/>
+            android:title="@string/menu_update_rightnow"/>
         <item
             android:id="@+id/menu_delsource"
-            android:icon="@drawable/delete"
+            android:icon="@drawable/ic_cancel"
             android:showAsAction="ifRoom|withText"
             android:title="@string/menu_delete_source"/>
+        
+        <item
+            android:id="@+id/menu_addsource"
+            android:icon="@drawable/ic_add"
+            android:showAsAction="ifRoom|withText"
+            android:title="@string/menu_add_source"/>
 <!--        <item
             android:id="@+id/menu_showmenu"
             android:icon="@drawable/ic_launcher"

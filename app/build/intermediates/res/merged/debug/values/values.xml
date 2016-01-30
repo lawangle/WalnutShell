@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="default_times">
+        <item>7:0</item>
+        <item>17:0</item>
+        <item>12:0</item>
+        <item>21:0</item>
+        <item>23:0</item>
+    </string-array>
+    <string-array name="frequence">
+        <item>1 次</item>
+        <item>2 次</item>
+        <item>3 次</item>
+        <item>4 次</item>
+        <item>5 次</item>
+    </string-array>
     <string-array name="system_array">
         <item>设置</item>
         <item>关于</item>
@@ -77,39 +91,39 @@
     <color name="abc_search_url_text_normal">#7fa87f</color>
     <color name="abc_search_url_text_pressed">@android:color/black</color>
     <color name="abc_search_url_text_selected">@android:color/black</color>
-    <color name="actionbar_backgroud">#BF8141</color>
+    <color name="actionbar_backgroud">#2B2F36</color>
     <color name="actionbar_menu_text">#000000</color>
     <color name="actionbar_tab_backgroud">#CDCDCD</color>
     <color name="actionbar_tab_text">#000000</color>
-    <color name="actionbar_title_text">#000000</color>
-    <color name="add_source_backgourd">#DDDDDD</color>
-    <color name="add_source_button_line">#DDDDDD</color>
+    <color name="actionbar_title_text">#FFFFFF</color>
+    <color name="add_source_backgourd">#DADBDB</color>
+    <color name="add_source_button_line">#DADBDB</color>
     <color name="article_backgroud">#E5E5E5</color>
     <color name="article_sec_title">#777777</color>
     <color name="article_text">#000000</color>
     <color name="article_title">#000000</color>
-    <color name="backgroud">#DDDDDD</color>
+    <color name="backgroud">#DADBDB</color>
     <color name="black_overlay">#66000000</color>
-    <color name="choose_source_backgourd">#DDDDDD</color>
+    <color name="choose_source_backgourd">#DADBDB</color>
     <color name="choose_source_button_backgroud">#FFFFFF</color>
     <color name="choose_source_button_line">#DDDDDD</color>
     <color name="choose_source_button_text">#000000</color>
     <color name="choose_source_item_backgourd">#FFFFFF</color>
-    <color name="choose_source_item_title">#AAAAAA</color>
-    <color name="choose_source_section_backgourd">#A6A6A6</color>
+    <color name="choose_source_item_title">#4C4C4D</color>
+    <color name="choose_source_section_backgourd">#66CCDD</color>
     <color name="choose_source_section_name">#000000</color>
-    <color name="drawer_backgroud">#DDDDDD</color>
-    <color name="drawer_item_backgroud">#DDDDDD</color>
+    <color name="drawer_backgroud">#1F2227</color>
+    <color name="drawer_item_backgroud">#1F2227</color>
     <color name="drawer_item_create_time">#AAAAAA</color>
-    <color name="drawer_item_title">#000000</color>
-    <color name="drawer_section_backgourd">#A6A6A6</color>
-    <color name="drawer_section_text">#000000</color>
-    <color name="newspaper_backgourd">#DDDDDD</color>
+    <color name="drawer_item_title">#FFFFFF</color>
+    <color name="drawer_section_backgourd">#1F2227</color>
+    <color name="drawer_section_text">#FFFFFF</color>
+    <color name="newspaper_backgourd">#DADBDB</color>
     <color name="newspaper_item_backgourd">#FFFFFF</color>
     <color name="newspaper_item_source_time">#777777</color>
     <color name="newspaper_item_summary">#AAAAAA</color>
     <color name="newspaper_item_title">#000000</color>
-    <color name="newspaper_section_backgourd">#A6A6A6</color>
+    <color name="newspaper_section_backgourd">#66CCDD</color>
     <color name="newspaper_section_name">#FFFFFF</color>
     <color name="waiting_text">#AAAAAA</color>
     <color name="welcom_backgroud">#FFFFFF</color>
@@ -175,26 +189,33 @@
     <string name="action_search">搜索</string>
     <string name="action_settings">设置</string>
     <string name="action_websearch">Web search</string>
+    <string name="add_news">添加报刊</string>
     <string name="alert">提醒</string>
     <string name="app_name">核桃壳</string>
     <string name="app_not_available">Sorry, there\'s no web browser available</string>
     <string name="article_content"><p style="text-align: center;"><a href="http://www.ifanr.com/348020/20130910091326-dsc_3829_touchedup" rel="attachment wp-att-348026"><img alt="20130910091326-DSC_3829_touchedup" class="alignnone size-full wp-image-348026" height="375" src="http://cdn.ifanr.cn/wp-content/uploads/2013/09/20130910091326-DSC_3829_touchedup.jpg" width="600"/></a></p><p>ParaShoot，这个早已多次见诸报端的众筹项目，在近日第三次进行了众筹活动。是的，你没看错，还第一次见到连续三次众筹的项目，前两次是在 Kickstarter 上，第三次是在 <a href="http://www.indiegogo.com/projects/parashoot-2-1-the-only-customizable-wearable-wireless-multi-use-small-hd-camera">Indiegogo</a> 上。</p><p>连续 3 次冲刺众筹，ParaShoot 可能是众筹模式里最坎坷的一个。6 月份，我们报道了它在 Kickstarter 上筹款，当时的目标金额是 26 万美元，由于目标太高，首次筹款失败。</p><p>随后 ParaShoot 又在 Kickstarter 上进行了第二次筹款，把目标降到了十分现实的 6 万美元。新的目标金额迅速凑效，他们很快就达到了目标金额，本以为可以大干一场，没想到 Kickstarter 突然<a href="http://www.kickstarter.com/projects/540550394/parashoot-20-multi-use-wearable-smart-hd-camera">中止了这次项目</a>，他们依旧无法收到筹款。<span id="more-348020"/></p><p>ParaShoot 创始人 <a href="http://thenextweb.com/gadgets/2013/09/16/parashoot-takes-its-wearable-hd-device-to-indiegogo-after-kickstarter-campaign-is-suspended/">Matt Sandy 很无辜的称</a>自己并未得到Kickstarter提醒，项目被取消后对方也没有解释。他们只能眼睁睁的看着筹到的 11.7 万美元款项退回 751 位用户，可谓欲哭无泪。</p><p>这次他们携带了 ParaShoot 2.1 版本来到 Indiegogo 发起众筹项目，从产品上讲，功能进行了迭代更新。这次的筹款金额也十分有趣，赌气似的把数字设定为 11.7 万美元，也就是被 Kickstarter 退回的金额。</p><p>ParaShoot 是一款可穿戴的视频拍摄相机，可以挂在脖子上或者别在腰间。它可以拍摄 720p 的高清视频，通过内置的 MicroSD 卡存储视频，还可以自动把视频保存在云端的第三方服务器上。</p><p style="text-align: center;"><a href="http://www.ifanr.com/348020/3cbe936aee1143827e1a79530e9d1874_large" rel="attachment wp-att-348028"><img alt="3cbe936aee1143827e1a79530e9d1874_large" height="600" src="http://cdn.ifanr.cn/wp-content/uploads/2013/09/3cbe936aee1143827e1a79530e9d1874_large.jpg" width="600"/></a></p><p>相比第一代，ParaShoot 2.1可拍摄的视角扩展到了 100 度（第一代为 65 度），还可以悬挂到更多地方比如汽车挡风玻璃，墙体上。ParaShoot 重量只有 15g，有多种外形设计可选，可用 Android、iOS 手机 App 控制。</p><p>在 Indiegogo 上最低 149 美元可以获得一个 ParaShoot 2.1，不知道第三次筹款能否成功，会不会遭遇“一鼓作气，再而衰，三而竭”的悲剧呢？</p></string>
     <string name="cancel">取消</string>
+    <string name="choose_update_time">更新时间</string>
     <string name="confirm">确定</string>
     <string name="default_summary">编者按：本文来自腾讯即时通信部商务副总监刘硕裴，文章观点属于其个人意见，不代表公司立场，其公众号：小Q逗你玩。
 									新浪微博上线4周年的当天，华尔街给曹国伟的大礼是——新浪当日股价下跌5%。下图并不是新浪微博的活跃度的变化情况，
 									而是新浪股价的五年走势图，真是跌宕起伏。股价的走势也侧面映衬了活跃度下降、商业化迟缓的窘境。</string>
     <string name="default_title">标题</string>
     <string name="delete_source">删除源</string>
+    <string name="description">描述</string>
     <string name="drawer_close">Close navigation drawer</string>
     <string name="drawer_open">Open navigation drawer</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="everyday">每日:</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="hello_world">Hello world!</string>
     <string name="menu_about">关于</string>
+    <string name="menu_add_news">添加报刊</string>
     <string name="menu_add_source">添加源</string>
     <string name="menu_collect_article">收藏文章</string>
     <string name="menu_day_mode">日间模式</string>
+    <string name="menu_delete_news">删除报刊</string>
     <string name="menu_delete_source">删除源</string>
     <string name="menu_manage_newspaper">管理报刊</string>
     <string name="menu_night_mode">夜间模式</string>
@@ -203,18 +224,25 @@
     <string name="menu_quit">退出</string>
     <string name="menu_settings">Settings</string>
     <string name="menu_show_menu">显示菜单</string>
+    <string name="menu_update_rightnow">立即更新</string>
     <string name="my_collect">我的收藏</string>
     <string name="my_newspaper">我的报刊</string>
-    <string name="net_access_error">抱歉,您输入的网址无法访问...</string>
-    <string name="net_address_error">网络域名错误...</string>
+    <string name="name">名称:</string>
+    <string name="net_access_error">抱歉,您输入的网址无法访问</string>
+    <string name="net_address_error">网络域名错误</string>
     <string name="net_error">网络不给力啦⊙﹏⊙b</string>
     <string name="no_URL_input">您还没有输入目标网址</string>
-    <string name="no_content_to_show">深感抱歉，原网页上无法解析出正文内容。\n核桃壳会尽快改进</string>
+    <string name="no_content_to_show">抱歉，没有内容可以显示。\n请检查你的网络或查看原网页</string>
+    <string name="not_be_named_yet">您还没有给报刊命名</string>
     <string name="pick_a_newspaper">选择一张报纸</string>
+    <string name="please_choose_one_source_at_least">请您先至少选择一个信息源来添加</string>
+    <string name="please_choose_one_source_to_delete">请您先选择一个信息源来删除</string>
+    <string name="please_choose_target_newspaper">请您先选择一个报刊</string>
     <string name="please_waiting">获取网页时间可能较长\n请耐心等待</string>
     <string name="recommend">精彩推荐</string>
     <string name="source">源</string>
     <string name="system">系统</string>
+    <string name="time">时间</string>
     <string name="title_activity_add_news">AddNewsActivity</string>
     <string name="title_activity_add_source">添加源</string>
     <string name="title_activity_article">文章1</string>
@@ -222,6 +250,7 @@
     <string name="title_section_RSS">RSS源</string>
     <string name="title_section_self_selected_source">自筛选源</string>
     <string name="unknown_URL">您输入的目标网址格式不正确</string>
+    <string name="update">更新</string>
     <style name="CustomActionBarTheme" parent="@style/Theme.AppCompat.Light"> 
 
         <item name="android:actionBarStyle">@style/MyActionBar</item>
@@ -240,6 +269,21 @@
         <!-- Support library compatibility -->
         <item name="titleTextStyle">@style/TitleTextStyle</item>
         <item name="background">@color/actionbar_backgroud</item>
+    </style>
+    <style name="OverCustomActionBarTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar"> 
+
+     
+        <item name="android:actionBarStyle">@style/OverMyActionBar</item>
+        <item name="android:actionBarTabTextStyle">@style/TabTextStyle</item>
+        <item name="android:actionMenuTextColor">@color/actionbar_title_text</item>
+
+        <!-- Support library compatibility -->
+        <item name="actionBarStyle">@style/MyActionBar</item>
+        <item name="actionBarTabTextStyle">@style/TabTextStyle</item>
+        <item name="actionMenuTextColor">@color/actionbar_title_text</item>
+    </style>
+    <style name="OverMyActionBar" parent="@style/MyActionBar">
+        <item name="windowActionBarOverlay">true</item>
     </style>
     <style name="TabTextStyle" parent="@style/Widget.AppCompat.ActionBar.TabText">
         <item name="android:textColor">@color/actionbar_tab_text</item>

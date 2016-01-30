@@ -7,14 +7,32 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".AddNewsActivity" > 
+    tools:context=".AddNewsActivity" >
+    
+	<FrameLayout 
+	    android:id="@+id/add_news_frame"
+	    android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+	</FrameLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
+
+    <TableLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
-    <EditView 
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_weight="0" 
+        android:stretchColumns="0,1">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button android:id="@+id/button_add_news_confirm"
+                android:text="@string/confirm" />
+
+            <Button android:id="@+id/button_add_news_cancel" 
+                android:text="@string/cancel" />
+        </TableRow>
+    </TableLayout>
 
 </LinearLayout>
