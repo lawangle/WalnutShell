@@ -9,123 +9,13 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f7a123cb-00ac-437d-8b8a-0ecf29bd474b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/UI/AboutFragment.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/UI/AboutFragment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/AddNewsActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/AddNewsActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/AddSourceActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/AddSourceActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/AddSourceActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/AddSourceActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/AddSourceActivity$AddSourceAlertDialog$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/AddSourceActivity$AddSourceAlertDialog$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/AddSourceActivity$AddSourceAlertDialog.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/AddSourceActivity$AddSourceAlertDialog.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/AddSourceActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/AddSourceActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/alarm/AlarmFactory.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/alarm/AlarmFactory.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/ArticleActivity$NoContentFragment.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/ArticleActivity$NoContentFragment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/ArticleActivity$PrepArticleTask.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/ArticleActivity$PrepArticleTask.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/ArticleActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/ArticleActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/UI/ArticleFragment$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/UI/ArticleFragment$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/UI/ArticleFragment.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/UI/ArticleFragment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/ChooseSourceActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/ChooseSourceActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/ChooseSourceActivity$NetErrorFragment.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/ChooseSourceActivity$NetErrorFragment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/ChooseSourceActivity$PrimitiveSourceTask.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/ChooseSourceActivity$PrimitiveSourceTask.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/ChooseSourceActivity$SectionsPagerAdapter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/ChooseSourceActivity$SectionsPagerAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/ChooseSourceActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/ChooseSourceActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/UI/ChooseSourceFragment$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/UI/ChooseSourceFragment$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/UI/ChooseSourceFragment$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/UI/ChooseSourceFragment$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/UI/ChooseSourceFragment$ChooseNewsDialog$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/UI/ChooseSourceFragment$ChooseNewsDialog$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/UI/ChooseSourceFragment$ChooseNewsDialog$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/UI/ChooseSourceFragment$ChooseNewsDialog$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/UI/ChooseSourceFragment$ChooseNewsDialog$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/UI/ChooseSourceFragment$ChooseNewsDialog$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/UI/ChooseSourceFragment$ChooseNewsDialog.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/UI/ChooseSourceFragment$ChooseNewsDialog.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/UI/ChooseSourceFragment$ChooseSourceEntryAdapter$ViewHolder.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/UI/ChooseSourceFragment$ChooseSourceEntryAdapter$ViewHolder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/UI/ChooseSourceFragment$ChooseSourceEntryAdapter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/UI/ChooseSourceFragment$ChooseSourceEntryAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/UI/ChooseSourceFragment$SectionAdapter$OnCheckedChanged.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/UI/ChooseSourceFragment$SectionAdapter$OnCheckedChanged.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/UI/ChooseSourceFragment$SectionAdapter$ViewHolder.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/UI/ChooseSourceFragment$SectionAdapter$ViewHolder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/UI/ChooseSourceFragment$SectionAdapter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/UI/ChooseSourceFragment$SectionAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/UI/ChooseSourceFragment.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/UI/ChooseSourceFragment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/basic/ContentDetail.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/basic/ContentDetail.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/content_provider/DataBridge.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/content_provider/DataBridge.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/DataProvider$DatabaseHelper.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/DataProvider$DatabaseHelper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/DataProvider.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/DataProvider.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/content_provider/DataProviderMetaData$EntryTableMetaData.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/content_provider/DataProviderMetaData$EntryTableMetaData.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/content_provider/DataProviderMetaData$NewsTableMetaData.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/content_provider/DataProviderMetaData$NewsTableMetaData.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/content_provider/DataProviderMetaData$SourceTableMetaData.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/content_provider/DataProviderMetaData$SourceTableMetaData.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/content_provider/DataProviderMetaData.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/content_provider/DataProviderMetaData.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/basic/DayTime.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/basic/DayTime.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/basic/Entry.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/basic/Entry.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/UI/EntryAdapter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/UI/EntryAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/HelloWorld.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/HelloWorld.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/basic/Image.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/basic/Image.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/fang/InterfaceImplement.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/fang/InterfaceImplement.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/fang/InternetInterface2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/fang/InternetInterface2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/MainActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/MainActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/MainActivity$AddSourceData.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/MainActivity$AddSourceData.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/MainActivity$AddSourceToDatabase.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/MainActivity$AddSourceToDatabase.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/MainActivity$DrawerNewsAdapter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/MainActivity$DrawerNewsAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/MainActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/MainActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/tester/MonitoredDebugActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/tester/MonitoredDebugActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/UI/NewsPaperFragment$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/UI/NewsPaperFragment$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/UI/NewsPaperFragment$DelSourceFragement$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/UI/NewsPaperFragment$DelSourceFragement$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/UI/NewsPaperFragment$DelSourceFragement$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/UI/NewsPaperFragment$DelSourceFragement$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/UI/NewsPaperFragment$DelSourceFragement$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/UI/NewsPaperFragment$DelSourceFragement$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/UI/NewsPaperFragment$DelSourceFragement.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/UI/NewsPaperFragment$DelSourceFragement.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/UI/NewsPaperFragment$EntryAdapter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/UI/NewsPaperFragment$EntryAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/UI/NewsPaperFragment.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/UI/NewsPaperFragment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/basic/Newspaper.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/basic/Newspaper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/basic/PageDetail.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/basic/PageDetail.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/content_provider/ProviderUtils.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/content_provider/ProviderUtils.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/R$array.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/R$array.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/R$attr.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/R$attr.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/R$bool.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/R$bool.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/R$color.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/R$color.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/R$dimen.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/R$dimen.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/R$drawable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/R$drawable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/R$integer.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/R$integer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$layout.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$layout.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/R$layout.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/R$layout.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/R$menu.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/R$menu.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/R$string.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/R$string.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$style.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$style.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/R$style.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/R$style.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/R$styleable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/R$styleable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/R.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/R.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/fang/RssThread.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/fang/RssThread.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/UI/SeparatedListAdapter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/UI/SeparatedListAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/UI/SystemAdapter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/UI/SystemAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/fang/ToolFunction.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/fang/ToolFunction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/UpdateService.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/UpdateService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/fang/UserDefinedSourceThread.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/fang/UserDefinedSourceThread.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/UI/WaitingFragment.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/UI/WaitingFragment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/UI/WaitingFragmentV4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/UI/WaitingFragmentV4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/WelcomeActivity$InitNewspapersTask.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/WelcomeActivity$InitNewspapersTask.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/WelcomeActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/WelcomeActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/resources-debug.ap_" afterPath="$PROJECT_DIR$/app/build/intermediates/res/resources-debug.ap_" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/manifests/full/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/manifests/full/debug/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/v7/appcompat/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/v7/appcompat/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/creaty/walnutshell/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/creaty/walnutshell/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/symbols/debug/R.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/symbols/debug/R.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/activity_add_news.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/activity_add_news.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/activity_add_source.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/activity_add_source.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/choose_source_section_item.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/choose_source_section_item.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/drawable-hdpi-v4.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/drawable-hdpi-v4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/drawable-mdpi-v4.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/drawable-mdpi-v4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/drawable-xhdpi-v4.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/drawable-xhdpi-v4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/drawable-xxhdpi-v4.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/drawable-xxhdpi-v4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/drawable.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/drawable.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/drawer_list_second_image_only_item.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/drawer_list_second_image_only_item.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/drawer_list_second_item.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/drawer_list_second_item.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/fragment_choose_source.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/fragment_choose_source.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/fragment_newspaper.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/fragment_newspaper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/fragment_waiting.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/fragment_waiting.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/layout.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/layout.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/menu/main.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/menu/main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/menu/main_menu.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/menu/main_menu.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" afterPath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merger.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/menu/newspaper_menu.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/menu/newspaper_menu.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/newspaper_second_item.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/newspaper_second_item.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/newspaper_second_no_image_item.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/newspaper_second_no_image_item.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/newspaper_section_item.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/newspaper_section_item.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi/values.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi/values.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values/values.xml" />
+    <list default="true" id="f7a123cb-00ac-437d-8b8a-0ecf29bd474b" name="Default" comment="test back">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/Shell$IncomingHandler.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/Shell$IncomingHandler.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/Shell.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/Shell.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/cache.properties.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/fileHashes.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.8/taskArtifacts/taskArtifacts.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="WalnutShell.iws" />
@@ -141,7 +31,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="ChangesViewManager" flattened_view="false" show_ignored="false" />
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
@@ -158,31 +48,55 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="30" column="48" selection-start-line="30" selection-start-column="48" selection-end-line="30" selection-end-column="48" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="local.properties" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/local.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Shell.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/creaty/walnutshell/Shell.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.5263158">
+              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AddNewsActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/creaty/walnutshell/AddNewsActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="98" column="8" selection-start-line="98" selection-start-column="8" selection-end-line="98" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Shell.class" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/Shell.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#1336#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Shell$IncomingHandler.class" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/Shell$IncomingHandler.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -208,7 +122,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="activity_add_news.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="activity_add_news.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/activity_add_news.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
@@ -218,31 +132,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="values.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values/values.xml">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="-0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="settings.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/settings.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -1799,6 +1693,7 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/creaty/walnutshell/fang/RssThread.java" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/local.properties" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/creaty/walnutshell/Shell.java" />
       </list>
     </option>
   </component>
@@ -2285,7 +2180,25 @@
       <option name="project" value="LOCAL" />
       <updated>1454150203955</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="1">
+      <created>1454150225494</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1454150225494</updated>
+    </task>
+    <task id="LOCAL-00004" summary="1">
+      <created>1454150342987</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1454150342987</updated>
+    </task>
+    <task id="LOCAL-00005" summary="test back">
+      <created>1454150578660</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1454150578660</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2336,7 +2249,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test" />
-    <option name="LAST_COMMIT_MESSAGE" value="test" />
+    <MESSAGE value="1" />
+    <MESSAGE value="test back" />
+    <option name="LAST_COMMIT_MESSAGE" value="test back" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -2541,13 +2456,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/creaty/walnutshell/AddNewsActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/creaty/walnutshell/AddSourceActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -2675,14 +2583,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/local.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/fang/UserDefinedSourceThread.class">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -2703,6 +2603,58 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/creaty/walnutshell/AddNewsActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="98" column="8" selection-start-line="98" selection-start-column="8" selection-end-line="98" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/Shell.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#1336#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build/intermediates/classes/debug/com/creaty/walnutshell/Shell$IncomingHandler.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/creaty/walnutshell/Shell.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5263158">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding />
         </state>
       </provider>
