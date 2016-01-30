@@ -4,13 +4,14 @@ local.properties
 
 *.lock
 
-.gradle/2.8/taskArtifacts/cache.properties.lock
-
-.gradle/2.8/taskArtifacts/fileHashes.bin
-
-.gradle/2.8/taskArtifacts/fileSnapshots.bin
-
-.gradle/2.8/taskArtifacts/taskArtifacts.bin
-
-
 *.bin
+
+*.xml
+
+*.json
+
+*.class
+
+*.apk
+
+*.jar
