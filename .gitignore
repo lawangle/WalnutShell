@@ -12,6 +12,5 @@ local.properties
 
 .gradle/2.8/taskArtifacts/taskArtifacts.bin
 
-*.xml
 
 *.bin
