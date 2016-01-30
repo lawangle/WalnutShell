@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="0,1" >
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/config_news_sec_spinner_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/default_title" />
+
+        <Spinner
+            android:id="@+id/config_news_sec_spinner_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0" />
+    </TableRow>
+
+</TableLayout>

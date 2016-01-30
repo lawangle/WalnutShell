@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="130dp"
+    android:layout_height="wrap_content"
+    android:minHeight="50dp"
     android:paddingLeft="12dp"
     android:paddingRight="12dp"
+    android:paddingTop="12dp"
+    android:paddingBottom="12dp"
     android:background="@color/newspaper_item_backgourd">
 
 
@@ -14,7 +17,6 @@
     android:orientation="vertical" >
     <TextView
             android:id="@+id/newspaper_sec_no_img_item_nameview"
-            android:layout_marginTop="15dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"   
             android:maxLines="3"
@@ -35,7 +37,6 @@
     <TextView
             android:id="@+id/newspaper_sec_no_img_item_infoview"
             android:layout_marginTop="6dp"
-            android:layout_marginBottom="15dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:maxLines="3"

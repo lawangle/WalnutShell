@@ -15,6 +15,20 @@
         <item name="actionMenuTextColor">@color/actionbar_title_text</item>
     </style>
 
+    <style name="OverCustomActionBarTheme"
+           parent="@style/Theme.AppCompat.Light.DarkActionBar"> 
+
+     
+        <item name="android:actionBarStyle">@style/OverMyActionBar</item>
+        <item name="android:actionBarTabTextStyle">@style/TabTextStyle</item>
+        <item name="android:actionMenuTextColor">@color/actionbar_title_text</item>
+
+        <!-- Support library compatibility -->
+        <item name="actionBarStyle">@style/MyActionBar</item>
+        <item name="actionBarTabTextStyle">@style/TabTextStyle</item>
+        <item name="actionMenuTextColor">@color/actionbar_title_text</item>
+    </style>
+    
     <!-- general styles for the action bar -->
     <style name="MyActionBar"
            parent="@style/Widget.AppCompat.ActionBar">
@@ -26,6 +40,11 @@
         <item name="background">@color/actionbar_backgroud</item>
     </style>
 
+    <style name="OverMyActionBar"
+           parent="@style/MyActionBar">
+        <item name="windowActionBarOverlay">true</item>
+    </style>
+    
     <!-- action bar title text -->
     <style name="TitleTextStyle"
            parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">

@@ -74,6 +74,7 @@ public class ChooseSourceFragment extends Fragment {
 		sourceType = b.getInt(ARG_SOURCE_TYPE);
 		sources = (ArrayList<Source>) b.getSerializable(ARG_SOURCES);
 		pageTitle = b.getString(ARG_PAGE_TITLE);
+		// 截短标题，使用空格分隔
 		int spaceoff = pageTitle.indexOf(' ', 1);
 		if (spaceoff != -1) {
 			pageTitle = pageTitle.substring(0, spaceoff);
@@ -105,7 +106,7 @@ public class ChooseSourceFragment extends Fragment {
 			Bundle savedInstanceState) {
 		View rootView = null;
 		// 如果sources不为空，进入选择界面，否则显示提示
-		if ( ! isSourceEmpty(sources)) {
+		if (!isSourceEmpty(sources)) {
 			rootView = inflater.inflate(R.layout.fragment_choose_source,
 					container, false);
 			// TextView dummyTextView = (TextView) rootView
@@ -116,57 +117,7 @@ public class ChooseSourceFragment extends Fragment {
 			mAdapter = prepareNewspaperAdapter();
 			listview.setAdapter(mAdapter);
 
-			Button confirmButton = (Button) rootView
-					.findViewById(R.id.button_choose_source_yes);
-			Button cancelButton = (Button) rootView
-					.findViewById(R.id.button_choose_source_cancel);
-			// 确定按钮设置监听器，弹出报刊选择对话框
-			confirmButton.setOnClickListener(new OnClickListener() {
-
-				@Override
-				public void onClick(View v) {
-					// TODO Auto-generated method stub
-					ArrayList<Source> result = preparedChooseResult();
-					if (!result.isEmpty()) {
-						Bundle b = new Bundle();
-						b.putInt(ARG_SOURCE_TYPE, sourceType);
-						b.putSerializable(ARG_SOURCES, result);
-						// getActivity().setResult(ARG_RESULT_OK,
-						// new Intent().putExtra(ARG_CHOOSE_RESULT, b));
-						DialogFragment newFragment = new ChooseNewsDialog();
-						newFragment.setArguments(b);
-						newFragment.show(getFragmentManager(),
-								"choose_newspapers_dialog");
-					}
-
-				}
-
-				/**
-				 * 准备用户选择后的结果
-				 * 
-				 * @return 用户选择的源
-				 */
-				private ArrayList<Source> preparedChooseResult() {
-					ArrayList<Source> result = new ArrayList<Source>();
-					SparseBooleanArray sba = sectionAdapter.getIsSelected();
-					int size = sba.size();
-					for (int i = 0; i < size; i++) {
-						if (sba.get(i))
-							result.add(sources.get(i));
-					}
-					return result;
-				}
-
-			});
-			// 取消按钮设置监听器 结束Activity
-			cancelButton.setOnClickListener(new OnClickListener() {
-
-				@Override
-				public void onClick(View v) {
-					// TODO Auto-generated method stub
-					getActivity().finish();
-				}
-			});
+			initButtons(rootView);
 
 		} else {
 			rootView = inflater.inflate(R.layout.fragment_no_source, container,
@@ -176,23 +127,80 @@ public class ChooseSourceFragment extends Fragment {
 		// ARG_SECTION_NUMBER)));
 		return rootView;
 	}
-	private boolean isSourceEmpty(ArrayList<Source> sources)
-	{
+
+	private void initButtons(View rootView) {
+		Button confirmButton = (Button) rootView
+				.findViewById(R.id.button_choose_source_yes);
+		Button cancelButton = (Button) rootView
+				.findViewById(R.id.button_choose_source_cancel);
+		// 确定按钮设置监听器，弹出报刊选择对话框
+		confirmButton.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				ArrayList<Source> result = preparedChooseResult();
+				if (!result.isEmpty()) {
+					Bundle b = new Bundle();
+					b.putInt(ARG_SOURCE_TYPE, sourceType);
+					b.putSerializable(ARG_SOURCES, result);
+					// getActivity().setResult(ARG_RESULT_OK,
+					// new Intent().putExtra(ARG_CHOOSE_RESULT, b));
+					DialogFragment newFragment = new ChooseNewsDialog();
+					newFragment.setArguments(b);
+					newFragment.show(getFragmentManager(),
+							"choose_newspapers_dialog");
+				} else {
+					Toast.makeText(getActivity(),
+							R.string.please_choose_one_source_at_least,
+							Toast.LENGTH_SHORT);
+				}
+
+			}
+
+			/**
+			 * 准备用户选择后的结果
+			 * 
+			 * @return 用户选择的源
+			 */
+			private ArrayList<Source> preparedChooseResult() {
+				ArrayList<Source> result = new ArrayList<Source>();
+				SparseBooleanArray sba = sectionAdapter.getIsSelected();
+				int size = sba.size();
+				for (int i = 0; i < size; i++) {
+					if (sba.get(i))
+						result.add(sources.get(i));
+				}
+				return result;
+			}
+
+		});
+		// 取消按钮设置监听器
+		cancelButton.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				getActivity().finish();
+			}
+		});
+	}
+
+	private boolean isSourceEmpty(ArrayList<Source> sources) {
 		boolean flag = false;
-		if( sources != null && !sources.isEmpty() ){
-			for(int i = 0; i < sources.size(); i++ )
-			{
-				if( sources.get(i).entries == null || sources.isEmpty() ){
+		if (sources != null && !sources.isEmpty()) {
+			for (int i = 0; i < sources.size(); i++) {
+				if (sources.get(i).entries == null || sources.isEmpty()) {
 					flag = true;
 					break;
 				}
 			}
-		}
-		else{
+		} else {
 			flag = true;
 		}
 		return flag;
 	}
+
 	// 准备好带有分隔栏的ListView
 	private SeparatedListAdapter prepareNewspaperAdapter() {
 		// SeparatedListAdapter sla = new SeparatedListAdapter(getActivity(),
@@ -201,7 +209,8 @@ public class ChooseSourceFragment extends Fragment {
 		sectionAdapter = new SectionAdapter(getActivity(),
 				R.layout.choose_source_section_item,
 				R.id.choose_source_item_textview, sections);
-		SeparatedListAdapter sla = new SeparatedListAdapter(sectionAdapter);
+		SeparatedListAdapter sla = new SeparatedListAdapter(sectionAdapter,
+				false);
 		int size = sources.size();
 		for (int i = 0; i < size; i++) {
 			sla.addSection(sources.get(i).name, new ChooseSourceEntryAdapter(
@@ -216,15 +225,15 @@ public class ChooseSourceFragment extends Fragment {
 		// 用来控制CheckBox的选中状况
 		private SparseBooleanArray isSelecteds;
 		// 上下文
-		private Context context;
+		//private Context context;
 		// 用来导入布局
-		private LayoutInflater inflater = null;
+		//private LayoutInflater inflater = null;
 
 		public SectionAdapter(Context context, int resource,
 				int textViewResourceId, List<String> objects) {
 			super(context, resource, textViewResourceId, objects);
 			// TODO Auto-generated constructor stub
-			inflater = LayoutInflater.from(context);
+			//inflater = LayoutInflater.from(context);
 			isSelecteds = new SparseBooleanArray();
 			list = (ArrayList<String>) objects;
 			// 初始化数据
@@ -400,27 +409,12 @@ public class ChooseSourceFragment extends Fragment {
 									// TODO Auto-generated method stub
 									if (newsId != -1) {
 										Bundle b = getArguments();
-										int type = b.getInt(ARG_SOURCE_TYPE);
 
-										Bundle newb = new Bundle();
-										// 赋予结果用户选择的报刊Id
-										newb.putInt(ARG_NEWS_ID, newsId);
-										// 在结果中放置PageDetail, 因为此时Bundle中已经包含选择的源
-										// pageDetail中的源要赋予用户选择的源
-										PageDetail pd = ((ChooseSourceActivity) getActivity())
-												.getPageDetail();
-										pd.ourSource = null;
-										pd.rssSource = null;
-										if (type == Source.SELF_SOURCE) {
-											pd.ourSource = (ArrayList<Source>) b
-													.getSerializable(ARG_SOURCES);
-										} else {
-											pd.rssSource = (ArrayList<Source>) b
-													.getSerializable(ARG_SOURCES);
-										}
-										newb.putSerializable(
-												ChooseSourceActivity.ARG_PAGEDETAIL,
-												pd);
+										Bundle newb = prepareBundleForNews(
+												b.getInt(ARG_SOURCE_TYPE),
+												(ArrayList<Source>) b
+														.getSerializable(ARG_SOURCES));
+
 										getActivity()
 												.setResult(
 														Activity.RESULT_OK,
@@ -428,15 +422,38 @@ public class ChooseSourceFragment extends Fragment {
 																.putExtra(
 																		ARG_CHOOSE_RESULT,
 																		newb));
-
-										c.close();
-										dialog.dismiss();
+										// dialog.dismiss();
 										getActivity().finish();
 									} else {
-										Toast.makeText(getActivity(),
-												"请您先选择一个报刊来添加信息源",
+										Toast.makeText(
+												getActivity(),
+												getActivity()
+														.getString(
+																R.string.please_choose_target_newspaper),
 												Toast.LENGTH_SHORT).show();
 									}
+								}
+
+								private Bundle prepareBundleForNews(int type,
+										ArrayList<Source> sources) {
+									Bundle newb = new Bundle();
+									// 赋予结果用户选择的报刊Id
+									newb.putInt(ARG_NEWS_ID, newsId);
+									// 在结果中放置PageDetail, 因为此时Bundle中已经包含选择的源
+									// pageDetail中的源要赋予用户选择的源
+									PageDetail pd = ((ChooseSourceActivity) getActivity())
+											.getPageDetail();
+									pd.ourSource = null;
+									pd.rssSource = null;
+									if (type == Source.SELF_SOURCE) {
+										pd.ourSource = sources;
+									} else {
+										pd.rssSource = sources;
+									}
+									newb.putSerializable(
+											ChooseSourceActivity.ARG_PAGEDETAIL,
+											pd);
+									return newb;
 								}
 							})
 					.setNegativeButton(R.string.cancel,
@@ -446,11 +463,17 @@ public class ChooseSourceFragment extends Fragment {
 								public void onClick(DialogInterface dialog,
 										int which) {
 									// TODO Auto-generated method stub
-									c.close();
-									dialog.dismiss();
+									// dialog.dismiss();
 								}
 							});
 			return builder.create();
+		}
+
+		@Override
+		public void onStop() {
+			// TODO Auto-generated method stub
+			super.onStop();
+			c.close();
 		}
 	}
 }

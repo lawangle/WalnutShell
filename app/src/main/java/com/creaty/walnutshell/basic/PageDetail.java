@@ -16,7 +16,7 @@ public class PageDetail implements Serializable{
 	public String pageName;
 	public String description;
 	public long lastModifiedTime;	//最后修改时间，来源：系统当前时间
-	public byte[] logo;			//logo图片
+	public String logoAddress;			//logo图片链接
 	
 	public ArrayList<Source> ourSource;		//自筛选源
 	public ArrayList<Source> rssSource;		//RSS源

@@ -15,6 +15,7 @@ import android.content.Context;
 import android.net.Uri;
 
 import com.creaty.walnutshell.basic.DayTime;
+import com.creaty.walnutshell.basic.StringAndImg;
 
 public class ProviderUtils {
 
@@ -25,8 +26,18 @@ public class ProviderUtils {
 		}
 		return sb.toString();
 	}
+	
+	public static ArrayList<DayTime> stringToAlarmTime( String s ){
+		ArrayList<DayTime> timeList = new ArrayList<DayTime>();
+		StringTokenizer st = new StringTokenizer(s, ";");
+		while( st.hasMoreTokens() )
+		{
+			timeList.add( new DayTime( st.nextToken() ));
+		}
+		return timeList;
+	}
 
-	public static String listToString( ArrayList<String> content ){
+	public static String contentListToString( ArrayList<StringAndImg> content ){
 		StringBuffer sb = new StringBuffer();
 		int size = content.size();
 		for( int i = 0 ; i < size; i++ ){
@@ -35,11 +46,11 @@ public class ProviderUtils {
 		sb.deleteCharAt(sb.length() - 1);
 		return sb.toString();
 	}
-	public static ArrayList<String> stringToList( String s ){
+	public static ArrayList<StringAndImg> stringToContentList( String s ){
 		StringTokenizer st = new StringTokenizer(s, "\n\n");
-		ArrayList<String> als = new ArrayList<String>();
+		ArrayList<StringAndImg> als = new ArrayList<StringAndImg>();
 		while( st.hasMoreTokens() ){
-			als.add(st.nextToken());
+			als.add(new StringAndImg(st.nextToken()));
 		}
 		return als;
 	}

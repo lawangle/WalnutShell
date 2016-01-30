@@ -12,7 +12,7 @@ public class ContentDetail implements Serializable{
 	
 	public Entry basicInfor;		//条目基本信息
 	public String author;		//作者/来源
-	public ArrayList<String>	content;			//正文（分段落存取）
+	public ArrayList<StringAndImg>	content;			//正文（分段落存取）
 	
 	//图片位置和图片链接（位置举例：假如段落0与段落1之间有图片，图片位置为1）
 	public Map<Integer,String> images;		
@@ -22,7 +22,7 @@ public class ContentDetail implements Serializable{
 	public ContentDetail() {
 		// TODO Auto-generated constructor stub
 		this.author = "";
-		content = new ArrayList<String>();
+		content = new ArrayList<StringAndImg>();
 		basicInfor = new Entry();
 	}
 	@Override

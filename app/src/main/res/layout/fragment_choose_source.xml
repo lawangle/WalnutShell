@@ -26,19 +26,7 @@
         android:gravity="bottom"
         android:orientation="horizontal" >
 
-        <Button
-           android:id="@+id/button_choose_source_yes"
-           android:layout_width="match_parent"
-           android:layout_height="match_parent"
-           android:layout_weight="1"
-           android:background="@color/choose_source_button_backgroud"
-            android:textColor="@color/choose_source_button_text"
-           android:text="@string/confirm" />    
-       
-		<TextView 
-		    android:layout_width="1dp"
-           android:layout_height="match_parent"
-           android:background="@color/choose_source_button_line"/>
+        
         <Button
             android:id="@+id/button_choose_source_cancel"
             android:layout_width="match_parent"
@@ -47,6 +35,20 @@
             android:background="@color/choose_source_button_backgroud"
             android:textColor="@color/choose_source_button_text"
             android:text="@string/cancel" />
+        
+       
+		<TextView 
+		    android:layout_width="1dp"
+           android:layout_height="match_parent"
+           android:background="@color/choose_source_button_line"/>
+        <Button
+           android:id="@+id/button_choose_source_yes"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:background="@color/choose_source_button_backgroud"
+            android:textColor="@color/choose_source_button_text"
+           android:text="@string/confirm" />    
     </LinearLayout>
 
 </LinearLayout>

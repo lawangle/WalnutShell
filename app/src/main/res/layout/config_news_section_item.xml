@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+<TextView
+    android:id="@+id/config_news_section_textview"
+    style="?android:attr/listSeparatorTextViewStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/default_title"/>
+
+<View
+    android:layout_width="match_parent"
+    android:layout_height="2dip"
+    android:background="#FF909090" />
+
+</LinearLayout>

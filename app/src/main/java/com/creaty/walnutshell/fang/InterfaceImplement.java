@@ -1,9 +1,7 @@
 package com.creaty.walnutshell.fang;
 
-import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.InputStreamReader;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.UnknownHostException;
@@ -24,34 +22,42 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
-import android.util.Log;
-
 import com.creaty.walnutshell.basic.ContentDetail;
 import com.creaty.walnutshell.basic.Entry;
 import com.creaty.walnutshell.basic.Image;
 import com.creaty.walnutshell.basic.PageDetail;
 import com.creaty.walnutshell.basic.Source;
 
+import android.util.Log;
 
-
-public class InterfaceImplement implements InternetInterface2{
+public class InterfaceImplement implements InternetInterface2 {
 
 	@Override
-	public PageDetail getPrimitiveSources(URL url) throws Exception {
+	public PageDetail getPrimitiveSources(URL url) throws ClientProtocolException,UnknownHostException {
 		// TODO Auto-generated method stub	
-		System.out.println("Get all source start!");
+		//System.out.println("Get all source start!");
 		PageDetail returnValue = null;
 		try {
 			ArrayList<Source> rssSource = new ArrayList<Source>();
 			ArrayList<Source> ourSource = new ArrayList<Source>();
-			PageDetailAndHtml value = ToolFunction.GetPageDetailWithoutSource(url.toString());
+			long htmlTimeStart = System.currentTimeMillis();
+			String urlTemp = url.toString();
+			if(urlTemp.indexOf(" ") != -1)
+				urlTemp = urlTemp.replaceAll(" ", "");
+			PageDetailAndHtml value = ToolFunction.GetPageDetailWithoutSource(urlTemp);
+			long htmlTimeEnd = System.currentTimeMillis();
+			String msg =  "Get htmlCode cost: " + String.valueOf(htmlTimeEnd - htmlTimeStart);
+			Log.d("htmlTime", msg);
 		    returnValue = value.detail;
 			String htmlCode = value.html;
-			ArrayList<String>xmlUrlList = ToolFunction.GetXmlUrlFromUrl(htmlCode);			
+			long xmlStart = System.currentTimeMillis();
+			ArrayList<String>xmlUrlList = ToolFunction.GetXmlUrlFromUrl(htmlCode,urlTemp);		
+			long xmlEnd = System.currentTimeMillis();
+			msg =  "Get xml url cost: " + String.valueOf(xmlEnd - xmlStart);
+			Log.d("get xml url", msg);
 			int seq = 1;
-			int temp = 2;
+			int temp = 5;
 			int index = 0;
-			
 			if(xmlUrlList.size() < 3)
 			{
 				while(true)
@@ -70,7 +76,7 @@ public class InterfaceImplement implements InternetInterface2{
 						for(FutureTask<Source> i3 : rssGroup){
 							rssSource.add(i3.get());
 						}
-						System.out.println("Thread Group" + (index + 1) + "->" +(index + temp) + "Finished!");
+						//System.out.println("Thread Group" + (index + 1) + "->" +(index + temp) + "Finished!");
 						index += temp;
 					}
 					else{
@@ -84,7 +90,7 @@ public class InterfaceImplement implements InternetInterface2{
 						for(FutureTask<Source> i3 : rssGroup){
 							rssSource.add(i3.get());
 						}
-						System.out.println("Thread Group" + (index + 1) + "->" +(xmlUrlList.size()) + "Finished!");
+						//System.out.println("Thread Group" + (index + 1) + "->" +(xmlUrlList.size()) + "Finished!");
 						break;
 					}
 					for(FutureTask<Source> i3 : rssGroup){
@@ -93,19 +99,57 @@ public class InterfaceImplement implements InternetInterface2{
 				}
 			}
 			else{
-				for(String xml:xmlUrlList){
-					Source a = new Source();
-					a.page_address = xml;
-					rssSource.add(a);
+				while(true)
+				{
+					ArrayList<FutureTask<Source>> rssGroup = new ArrayList<FutureTask<Source>>();		
+					if(index + temp - 1 <= xmlUrlList.size() - 1)
+					{
+						for(int i = index;i < index + temp;i++)
+						{
+							SimpleRssThread rt = new SimpleRssThread(xmlUrlList.get(i),seq);
+							FutureTask<Source> task = new FutureTask<Source>(rt);
+							rssGroup.add(task);
+							new Thread(task,"rssThread" + seq).start();
+							seq++;
+						}
+						for(FutureTask<Source> i3 : rssGroup){
+							rssSource.add(i3.get());
+						}
+						//System.out.println("Thread Group" + (index + 1) + "->" +(index + temp) + "Finished!");
+						index += temp;
+					}
+					else{
+						for(int i = index;i < xmlUrlList.size();i++){
+							SimpleRssThread rt = new SimpleRssThread(xmlUrlList.get(i),seq);
+							FutureTask<Source> task = new FutureTask<Source>(rt);
+							rssGroup.add(task);
+							new Thread(task,"rssThread" + seq).start();
+							seq++;
+						}
+						for(FutureTask<Source> i3 : rssGroup){
+							rssSource.add(i3.get());
+						}
+						//System.out.println("Thread Group" + (index + 1) + "->" +(xmlUrlList.size()) + "Finished!");
+						break;
+					}
+					for(FutureTask<Source> i3 : rssGroup){
+						rssSource.add(i3.get());
+					}
 				}
+//				int rssSeq = 1;
+//				for(String xml:xmlUrlList){
+//					Source a = new Source();
+//					a.name = "RssÔ´" + String.valueOf(rssSeq);
+//					a.page_address = xml;
+//					rssSource.add(a);
+//				}
 			}
 			seq = 1;
-			UserDefinedSourceThread udst = new UserDefinedSourceThread(value.html,url.toString());
+			UserDefinedSourceThread udst = new UserDefinedSourceThread(value.html,urlTemp);
 			FutureTask<ArrayList<Source>> task = new FutureTask<ArrayList<Source>>(udst);
 			new Thread(task,"ourThread").start();			
 			returnValue.rssSource = rssSource;
-			returnValue.ourSource = task.get();	
-			Log.d("abctest",String.valueOf( ourSource.size()) );
+			returnValue.ourSource = task.get();			
 		}catch(UnknownHostException e){
 			throw e;
 		}
@@ -116,21 +160,20 @@ public class InterfaceImplement implements InternetInterface2{
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-			throw e;
-		} catch (Exception e) {
-			// TODO ×Ô¶¯Éú³ÉµÄ catch ¿é
+		}catch(Exception e){
 			e.printStackTrace();
-			throw e;
 		}
-		System.out.println("Get all source end!");
-		Log.d("abctest", returnValue.toString() );
+		//System.out.println("Get all source end!");
 		return returnValue;
 	}
 	
 	@Override
-	public Source getRssSource(URL url) throws java.net.UnknownHostException {
+	public Source getRssSource(URL url) throws UnknownHostException {
 		// TODO Auto-generated method stub
-		RssThread rt = new RssThread(url.toString(),-1);
+		String urlTemp = url.toString();
+		if(urlTemp.indexOf(" ") != -1)
+			urlTemp = urlTemp.replaceAll(" ", "");
+		RssThread rt = new RssThread(urlTemp,-1);
 		FutureTask<Source> task = new FutureTask<Source>(rt);
 		new Thread(task,"rssThread").start();
 		Source returnValue = null;
@@ -150,14 +193,17 @@ public class InterfaceImplement implements InternetInterface2{
 	public Source getSelfSource(URL url, int seq,int strategyType) {
 		// TODO Auto-generated method stub
 		String html = "";
+		String urlTemp = url.toString();
+		if(urlTemp.indexOf(" ") != -1)
+			urlTemp = urlTemp.replaceAll(" ", "");
 		try {
-			html = ToolFunction.GetHtmlCode(url.toString());
+			html = ToolFunction.GetHtmlCode(urlTemp);
 		}catch (MalformedURLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		Source returnValue = new Source();
-		returnValue.page_address = url.toString();
+		returnValue.page_address = urlTemp;
 		Date dateObj = new Date();
 		returnValue.modified_date = dateObj.getTime();
 		if(strategyType == Source.UL_STRATEGY){			
@@ -186,11 +232,11 @@ public class InterfaceImplement implements InternetInterface2{
 									temp.name = aEle.text().trim();
 									temp.href =  aEle.attr("href").trim();
 									if(temp.href.indexOf("http://") == -1){
-										if(url.toString().indexOf('/', 7)== -1)
-											temp.href = url.toString() + temp.href;
+										if(urlTemp.indexOf('/', 7)== -1)
+											temp.href = urlTemp + temp.href;
 										else{
-											int index = url.toString().indexOf('/', 7);
-											String subHref = url.toString().substring(0, index);
+											int index = urlTemp.indexOf('/', 7);
+											String subHref = urlTemp.substring(0, index);
 											temp.href = subHref + temp.href;
 										}
 									}
@@ -209,11 +255,11 @@ public class InterfaceImplement implements InternetInterface2{
 									temp.name = aEle.text().trim();
 									temp.href =  aEle.attr("href").trim();
 									if(temp.href.indexOf("http://") == -1){
-										if(url.toString().indexOf('/', 7)== -1)
-											temp.href = url.toString() + temp.href;
+										if(urlTemp.indexOf('/', 7)== -1)
+											temp.href = urlTemp + temp.href;
 										else{
-											int index = url.toString().indexOf('/', 7);
-											String subHref = url.toString().substring(0, index);
+											int index = urlTemp.indexOf('/', 7);
+											String subHref = urlTemp.substring(0, index);
 											temp.href = subHref + temp.href;
 										}
 									}
@@ -253,11 +299,11 @@ public class InterfaceImplement implements InternetInterface2{
 									temp.name = aEle.text().trim();
 									temp.href =  aEle.attr("href").trim();
 									if(temp.href.indexOf("http://") == -1){
-										if(url.toString().indexOf('/', 7)== -1)
-											temp.href = url.toString() + temp.href;
+										if(urlTemp.indexOf('/', 7)== -1)
+											temp.href = urlTemp + temp.href;
 										else{
-											int index = url.toString().indexOf('/', 7);
-											String subHref = url.toString().substring(0, index);
+											int index = urlTemp.indexOf('/', 7);
+											String subHref = urlTemp.substring(0, index);
 											temp.href = subHref + temp.href;
 										}
 									}
@@ -276,11 +322,11 @@ public class InterfaceImplement implements InternetInterface2{
 									tempEntry.name = title.trim();
 									tempEntry.href = aEle.attr("href").trim();
 									if(tempEntry.href.indexOf("http://") == -1){
-										if(url.toString().indexOf('/', 7)== -1)
-											tempEntry.href = url.toString() + tempEntry.href;
+										if(urlTemp.indexOf('/', 7)== -1)
+											tempEntry.href = urlTemp + tempEntry.href;
 										else{
-											int index = url.toString().indexOf('/', 7);
-											String subHref = url.toString().substring(0, index);
+											int index = urlTemp.indexOf('/', 7);
+											String subHref = urlTemp.substring(0, index);
 											tempEntry.href = subHref + tempEntry.href;
 										}
 									}
@@ -316,7 +362,7 @@ public class InterfaceImplement implements InternetInterface2{
 							temp.name = aEle.text().trim();
 							temp.href =  aEle.attr("href").trim();
 							if(temp.href.indexOf("http://") == -1){
-								temp.href = url.toString() + temp.href;
+								temp.href = urlTemp + temp.href;
 							}
 							temp.description = "";
 							entryList.add(temp);
@@ -349,7 +395,7 @@ public class InterfaceImplement implements InternetInterface2{
 							temp.name = aEle.text().trim();
 							temp.href =  aEle.attr("href").trim();
 							if(temp.href.indexOf("http://") == -1){
-								temp.href = url.toString() + temp.href;
+								temp.href = urlTemp + temp.href;
 							}
 							temp.description = "";
 							entryList.add(temp);
@@ -366,16 +412,20 @@ public class InterfaceImplement implements InternetInterface2{
 	@Override
 	public ContentDetail getContent(URL url) {
 		// TODO Auto-generated method stub
+		
 		ContentDetail returnValue = new ContentDetail();
 		Date dateObj = new Date();
 		returnValue.modified_date = dateObj.getTime();
 		try {
-			String htmlCode = ToolFunction.GetHtmlCode(url.toString());
+			String urlTemp = url.toString();
+			if(urlTemp.indexOf(" ") != -1)
+				urlTemp = urlTemp.replaceAll(" ", "");
+			String htmlCode = ToolFunction.GetHtmlCode(urlTemp);
 			returnValue.content = ToolFunction.ArticleAnalysis(htmlCode);
 			if(returnValue.content.size() > 1)
-				returnValue.basicInfor.description = returnValue.content.get(0) + returnValue.content.get(1) + "...";
-			org.jsoup.nodes.Document doc = Jsoup.parse(htmlCode);
-			org.jsoup.select.Elements titleList = doc.select("title");
+				returnValue.basicInfor.description = returnValue.content.get(0).GetText() + returnValue.content.get(1).GetText() + "...";///ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+			Document doc = Jsoup.parse(htmlCode);
+			Elements titleList = doc.select("title");
 			for(Element titleEle : titleList){
 				returnValue.basicInfor.name = titleEle.text();
 			}
@@ -386,15 +436,20 @@ public class InterfaceImplement implements InternetInterface2{
 		}
 		return returnValue;
 	}
-
+	
 	@Override
-	public Image getImage(URL url) {
+	public Image getImage(URL url) throws ClientProtocolException, IOException {
 		// TODO Auto-generated method stub
-		return null;
+		String urlString = url.toString();
+		HttpClient httpClient = new DefaultHttpClient();
+		HttpGet httpGet = new HttpGet(urlString);
+		httpGet.setHeader("User-Agent", "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.66 Safari/537.36");//ï¿½Ô·ï¿½ï¿½Ä°ï¿½ï¿½ï¿½Í·ï¿½ï¿½ï¿½ï¿½ï¿½è¶¨ï¿½ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½Ë³ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½È·ï¿½ï¿½Ô´ï¿½ï¿½
+		HttpResponse response = httpClient.execute(httpGet);
+		HttpEntity entity = response.getEntity();
+		InputStream input = entity.getContent();
+		Image returnValue = new Image(input);
+		returnValue.size = entity.getContentLength();
+		return returnValue;
 	}
-
-
-	
-	
 
 }

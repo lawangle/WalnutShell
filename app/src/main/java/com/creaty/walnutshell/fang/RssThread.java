@@ -12,11 +12,13 @@ import org.dom4j.io.SAXReader;
 import com.creaty.walnutshell.basic.Entry;
 import com.creaty.walnutshell.basic.Source;
 
+import android.util.Log;
+
 
 public class RssThread implements Callable<Source> {
 
 	private String url;
-	private int seq;//RSSÔ´ï¿½ï¿½ï¿½ï¿½Å¶ï¿½ï¿½å£¿
+	private int seq;//RSSÔ´µÄÐòºÅ¶¨Òå£¿
 	public RssThread(String url,int seq) {
 		// TODO Auto-generated constructor stub
 		this.url = url;
@@ -25,34 +27,36 @@ public class RssThread implements Callable<Source> {
 	@Override
 	public Source call() throws Exception {
 		// TODO Auto-generated method stub
-		System.out.println("RSS "  + this.seq + " start!");
+		long timeStart = System.currentTimeMillis();
+		//System.out.println("RSS "  + this.seq + " start!");
 		Source returnValue = new Source();
 		returnValue.page_address = this.url;
+		//System.out.println("@@" + returnValue.page_address);
 		returnValue.type = returnValue.RSS_SOURCE;
 		returnValue.sourceSeq = this.seq;
 		Date date = new Date();
-		returnValue.modified_date = date.getTime();//ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		returnValue.modified_date = date.getTime();//ÔÝÊ±ÏÈÕâÑù
 		ArrayList<Entry> entryList = new ArrayList<Entry>();
 		SAXReader reader = new SAXReader();
 		org.dom4j.Document doc = null;
 		try{
 			doc= reader.read(url);
 		}catch(Exception e){
-			System.out.println("No Page!");
+			//System.out.println("No Page!");
 			return new Source();
 		}
 		List list = doc.selectNodes("/rss/channel");
 		Iterator iter = list.iterator();
 		while(iter.hasNext()){
-	        	org.dom4j.Element ownerElement = (org.dom4j.Element)iter.next();
-	        	returnValue.description = GetText(ownerElement.elementText("description"));
-	        	try
-	        	{
-	        		returnValue.page_address = ownerElement.elementText("link");
-	        	}catch(	NullPointerException e){
-	        		returnValue.page_address = "";
-	        	}
-	        	returnValue.name = ownerElement.elementText("title"); 	
+	        org.dom4j.Element ownerElement = (org.dom4j.Element)iter.next();
+	       	returnValue.description = GetText(ownerElement.elementText("description"));
+	       	try
+	       	{
+	       		//returnValue.page_address = ownerElement.elementText("link");
+	       	}catch(	NullPointerException e){
+	       		returnValue.page_address = "";
+	       	}
+	       	returnValue.name = ownerElement.elementText("title"); 	
 		}
         List itemList = doc.selectNodes("/rss/channel/item");
         Iterator tempIter = itemList.iterator();
@@ -71,7 +75,11 @@ public class RssThread implements Callable<Source> {
 	       	entryList.add(temp);
         }
         returnValue.entries = entryList;
-        System.out.println("RSS "  + this.seq + " end!");
+        //System.out.println("RSS "  + this.seq + " end!");
+        long timeEnd = System.currentTimeMillis();
+        String msg =  "RSS " + String.valueOf(seq) + " cost: " + String.valueOf(timeStart - timeEnd);
+        Log.d("RSS " + String.valueOf(seq), msg);
+        System.out.println(msg);
 		return returnValue;
 	}
 	private String GetText(String html) {

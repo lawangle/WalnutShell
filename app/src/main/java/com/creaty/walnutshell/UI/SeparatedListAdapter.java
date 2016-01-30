@@ -12,35 +12,42 @@ import android.widget.BaseAdapter;
 public class SeparatedListAdapter extends BaseAdapter {
 	public final Map<String, Adapter> sections = new LinkedHashMap<String, Adapter>();
 	public final ArrayAdapter<String> headers;
+	public boolean isSectionSelectable;
 	public final static int TYPE_SECTION_HEADER = 0;
 
-	public SeparatedListAdapter( ArrayAdapter<String> sectionAdapter ){
+	public SeparatedListAdapter(ArrayAdapter<String> sectionAdapter,
+			boolean isSecSele) {
 		headers = sectionAdapter;
+		isSectionSelectable = isSecSele;
 	}
-	public SeparatedListAdapter(Context context, int sectionView, int textView) {
-		headers = new ArrayAdapter<String>(context, sectionView, textView);
+
+	public SeparatedListAdapter(Context context, int sectionView, int textView,
+			boolean isSecSele) {
+		this(new ArrayAdapter<String>(context, sectionView, textView),
+				isSecSele);
 	}
 
 	public void addSection(String section, Adapter adapter) {
 		this.headers.add(section);
 		this.sections.put(section, adapter);
 	}
+
 	public void removeSection(String section) {
 		this.headers.remove(section);
 		this.sections.remove(section);
-		//notifyDataSetChanged();
+		// notifyDataSetChanged();
 	}
-	
-	public String getSectionName( int position ){
+
+	public String getSectionName(int position) {
 		int headerIndex = 0;
 		for (Object section : this.sections.keySet()) {
 			Adapter adapter = sections.get(section);
 			int size = adapter.getCount() + 1;
 
 			// check if position inside this section
-			if (position <= size )
+			if (position <= size)
 				return headers.getItem(headerIndex);
-			
+
 			// otherwise jump into next section
 			position -= size;
 			headerIndex++;
@@ -107,12 +114,16 @@ public class SeparatedListAdapter extends BaseAdapter {
 	}
 
 	public boolean areAllItemsSelectable() {
-		return false;
+		return isSectionSelectable;
 	}
 
 	@Override
 	public boolean isEnabled(int position) {
-		return (getItemViewType(position) != TYPE_SECTION_HEADER);
+		if (isSectionSelectable) {
+			return false;
+		} else {
+			return (getItemViewType(position) != TYPE_SECTION_HEADER);
+		}
 	}
 
 	@Override
@@ -137,7 +148,7 @@ public class SeparatedListAdapter extends BaseAdapter {
 
 	@Override
 	public long getItemId(int position) {
-		
+
 		for (Object section : this.sections.keySet()) {
 			Adapter adapter = sections.get(section);
 			int size = adapter.getCount() + 1;
@@ -146,7 +157,7 @@ public class SeparatedListAdapter extends BaseAdapter {
 			if (position == 0)
 				return 0;
 			if (position < size)
-				return adapter.getItemId(position-1);
+				return adapter.getItemId(position - 1);
 
 			// otherwise jump into next section
 			position -= size;
