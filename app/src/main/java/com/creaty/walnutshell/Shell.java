@@ -16,6 +16,7 @@ public class Shell extends Service {
 	
 	/** Command to the service to display a message */
     static final int MSG_SAY_HELLO = 1;
+    static final int TEST = 2;
 
     /**
      * Handler of incoming messages from clients.
