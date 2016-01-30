@@ -15,6 +15,7 @@ import com.creaty.walnutshell.basic.Entry;
 import com.creaty.walnutshell.basic.PageDetail;
 import com.creaty.walnutshell.basic.Source;
 import com.creaty.walnutshell.fang.InterfaceImplement;
+import com.creaty.walnutshell.fang.NetError;
 
 import android.app.ActionBar;
 import android.app.FragmentTransaction;
@@ -43,16 +44,13 @@ public class ChooseSourceActivity extends FragmentActivity implements
 	public static final String ARG_URL = "url";
 	public static final String ARG_PAGEDETAIL = "page_detail";
 	public static final String ARG_NET_ERROR = "net_error";
-	public static final int NET_ERROR = -1;
-	public static final int NET_ADDRESS_ERROR = -2;
-	public static final int NET_ACCESS_ERROR = -3;
 
 	int netErrorCode = 0;
 
 	public ActionBar actionBar = null;
 	public boolean isfinished = false;
 	public PageDetail pageDetail = null;
-	private Fragment currFragment = null;
+	//private Fragment currFragment = null;
 	PrimitiveSourceTask pstask = null;
 	// final WaitingFragmentV4 waitngFragment = new WaitingFragmentV4();
 	// final ChooseSourceFragment selfSourceFragment = new
@@ -60,12 +58,12 @@ public class ChooseSourceActivity extends FragmentActivity implements
 	// final ChooseSourceFragment rssSourceFragment = new
 	// ChooseSourceFragment();
 	/**
-	 * The {@link android.support.v4.view.PagerAdapter} that will provide
+	 * The {@link PagerAdapter} that will provide
 	 * fragments for each of the sections. We use a
-	 * {@link android.support.v4.app.FragmentPagerAdapter} derivative, which
+	 * {@link FragmentPagerAdapter} derivative, which
 	 * will keep every loaded fragment in memory. If this becomes too memory
 	 * intensive, it may be best to switch to a
-	 * {@link android.support.v4.app.FragmentStatePagerAdapter}.
+	 * {@link FragmentStatePagerAdapter}.
 	 */
 	SectionsPagerAdapter mSectionsPagerAdapter;
 
@@ -163,7 +161,7 @@ public class ChooseSourceActivity extends FragmentActivity implements
 	public void onTabReselected(ActionBar.Tab tab,
 			FragmentTransaction fragmentTransaction) {
 	}
-
+	/**����ҳ����Ϣ��ɸѡ����ԭʼԴ*/
 	public PageDetail getPageDetail() {
 		return pageDetail;
 	}
@@ -176,61 +174,29 @@ public class ChooseSourceActivity extends FragmentActivity implements
 			// TODO Auto-generated method stub
 			com.creaty.walnutshell.fang.InternetInterface2 ii = new InterfaceImplement();
 			Log.d(tag, "PrimitiveSourceTask do" + params[0]);
-			// try {
-			// Thread.sleep(1000);
-			// } catch (InterruptedException e) {
-			// // TODO Auto-generated catch block
-			// e.printStackTrace();
-			// }
-			// PageDetail pd =new PageDetail();
-			// Source s;
-			// pd.ourSource = new ArrayList<Source>();
-			// for( int i = 0; i < 100; i++){
-			// s= new Source();
-			// s.name = "source"+i;
-			// s.type = Source.SELF_SOURCE;
-			// s.entries = new ArrayList<Entry>();
-			// for( int j = 0; j < 4; j++){
-			// s.entries.add(new Entry(-1, ""+j, "", ""));
-			// }
-			// pd.ourSource.add(s);
-			// }
-			// pd.rssSource = new ArrayList<Source>();
-			// for( int i = 0; i < 4; i++){
-			// s= new Source();
-			// s.name = "source"+i;
-			// s.type = Source.RSS_SOURCE;
-			// s.entries = new ArrayList<Entry>();
-			// for( int j = 0; j < 4; j++){
-			// s.entries.add(new Entry(-1, ""+j, "", ""));
-			// }
-			// pd.rssSource.add(s);
-			// }
 			PageDetail pd = null;
 			try {
 				pd = ii.getPrimitiveSources(params[0]);
+				Log.d(tag, "getPrimitiveSources");
 			} catch (ClientProtocolException e) {
 				// TODO Auto-generated catch block
-				netErrorCode = NET_ADDRESS_ERROR;
+				netErrorCode = NetError.NET_ADDRESS_ERROR;
 				e.printStackTrace();
+				Log.d(tag, "Exception"+netErrorCode);
 			} catch (UnknownHostException e) {
-				netErrorCode = NET_ACCESS_ERROR;
+				// TODO �Զ����ɵ� catch ��
+				netErrorCode = NetError.NET_ACCESS_ERROR;
 				e.printStackTrace();
+				Log.d(tag, "Exception"+netErrorCode);
 			} catch (IOException e) {
-				netErrorCode = NET_ERROR;
+				netErrorCode = NetError.NET_ERROR;
 				e.printStackTrace();
+				Log.d(tag, "Exception"+netErrorCode);
 			} catch (Exception e) {
+				// TODO �Զ����ɵ� catch ��
 				e.printStackTrace();
 				Log.d(tag, "Exception");
 			}
-//			if (pd != null) {
-//				Log.d(tag, "pageDetail is not null");
-//				if (pd.ourSource != null) {
-//					Log.d(tag, "ourSource is not null" + pd.ourSource.size());
-//				} else if (pd.rssSource != null) {
-//					Log.d(tag, "rssSource is not null" + pd.rssSource.size());
-//				}
-//			}
 			return pd;
 		}
 
@@ -310,17 +276,7 @@ public class ChooseSourceActivity extends FragmentActivity implements
 			} else {
 				fragment = new NetErrorFragment();
 				Bundle b = new Bundle();
-				switch (netErrorCode) {
-				case NET_ACCESS_ERROR:
-					b.putInt(ARG_NET_ERROR, NET_ACCESS_ERROR);
-					break;
-				case NET_ADDRESS_ERROR:
-					b.putInt(ARG_NET_ERROR, NET_ADDRESS_ERROR);
-					break;
-				case NET_ERROR:
-					b.putInt(ARG_NET_ERROR, NET_ERROR);
-					break;
-				}
+				b.putInt(ARG_NET_ERROR, netErrorCode);
 				fragment.setArguments(b);
 			}
 			return fragment;
@@ -367,13 +323,13 @@ public class ChooseSourceActivity extends FragmentActivity implements
 			mTextView = (TextView) rootView
 					.findViewById(R.id.net_error_textview);
 			switch (getArguments().getInt(ARG_NET_ERROR)) {
-			case NET_ACCESS_ERROR:
+			case NetError.NET_ACCESS_ERROR:
 				mTextView.setText(R.string.net_access_error);
 				break;
-			case NET_ADDRESS_ERROR:
+			case NetError.NET_ADDRESS_ERROR:
 				mTextView.setText(R.string.net_address_error);
 				break;
-			case NET_ERROR:
+			case NetError.NET_ERROR:
 				mTextView.setText(R.string.net_error);
 				break;
 			}

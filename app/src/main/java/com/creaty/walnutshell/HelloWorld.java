@@ -5,6 +5,7 @@ import java.util.Calendar;
 import com.creaty.tester.IReportBack;
 import com.creaty.tester.MonitoredDebugActivity;
 import com.creaty.walnutshell.alarm.AlarmFactory;
+import com.creaty.walnutshell.basic.DayTime;
 import com.creaty.walnutshell.content_provider.DataProviderMetaData.NewsTableMetaData;
 import com.creaty.walnutshell.content_provider.ProviderTest;
 
@@ -87,9 +88,26 @@ implements IReportBack
     		return true;
     	}
     	if( item.getItemId() == R.id.menu_alarm_once){
-    		AlarmFactory.sendAlarm(getApplicationContext(), Calendar.getInstance(), 1);
+    		AlarmFactory.sendAlarm(getApplicationContext(), 1,1, new DayTime(1, 1));
+    	}
+    	if( item.getItemId() == R.id.menu_multiple_alarm ){
+    		testAlarm();
     	}
     	return true;
     }
-
+	private void testAlarm()
+	{
+		Calendar c = Calendar.getInstance();
+		c.add(Calendar.SECOND, 10);
+		Calendar[] cs = new Calendar[ 4 ];
+		int[] ids = new int[ cs.length ];
+		for( int  i = 0; i < 4; i++ ){
+			cs[ i ] = c;
+			ids[ i ] = Integer.parseInt(
+					String.valueOf( c.get(Calendar.HOUR_OF_DAY) )
+					+ String.valueOf( c.get(Calendar.MINUTE) )
+					+ String.valueOf( i )  );
+		}
+		AlarmFactory.sendMultiAlarm(this, cs, ids);
+	}
 }

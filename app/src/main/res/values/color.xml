@@ -2,29 +2,29 @@
 
     
     <!-- Color about Aplication -->
-    <color name="backgroud">#DDDDDD</color>
+    <color name="backgroud">#DADBDB</color>
     <color name="welcom_backgroud">#FFFFFF</color>
     <!-- <color name="backgroud">#E5E5E5</color> -->
     
     <!-- Color about Drawer view -->
-    <color name="drawer_backgroud">#DDDDDD</color>
-    <color name="drawer_item_title">#000000</color>
-    <color name="drawer_item_backgroud">#DDDDDD</color>
+    <color name="drawer_backgroud">#1F2227</color>
+    <color name="drawer_item_title">#FFFFFF</color>
+    <color name="drawer_item_backgroud">#1F2227</color>
     <color name="drawer_item_create_time">#AAAAAA</color>
-    <color name="drawer_section_backgourd">#A6A6A6</color>
-    <color name="drawer_section_text">#000000</color>
+    <color name="drawer_section_backgourd">#1F2227</color>
+    <color name="drawer_section_text">#FFFFFF</color>
     
     <!-- Color about ActionBar -->
-    <color name="actionbar_backgroud">#BF8141</color>
+    <color name="actionbar_backgroud">#2B2F36</color>
     <color name="actionbar_tab_backgroud">#CDCDCD</color>
     <color name="actionbar_tab_text">#000000</color>
-    <color name="actionbar_title_text">#000000</color>
+    <color name="actionbar_title_text">#FFFFFF</color>
     <color name="actionbar_menu_text">#000000</color>
    	
     <!-- Color about Newspaper View -->
-    <color name="newspaper_backgourd">#DDDDDD</color>
+    <color name="newspaper_backgourd">#DADBDB</color>
     <color name="newspaper_section_name">#FFFFFF</color>
-    <color name="newspaper_section_backgourd">#A6A6A6</color>
+    <color name="newspaper_section_backgourd">#66CCDD</color>
     <color name="newspaper_item_backgourd">#FFFFFF</color>
     <color name="newspaper_item_title">#000000</color>
     <color name="newspaper_item_source_time">#777777</color>
@@ -39,20 +39,23 @@
     <!-- Color about Add Source View -->
     
     <!-- Color about choose Source View -->
-    <color name="choose_source_backgourd">#DDDDDD</color>
+    <color name="choose_source_backgourd">#DADBDB</color>
     <color name="choose_source_section_name">#000000</color>
-    <color name="choose_source_section_backgourd">#A6A6A6</color>
+    <color name="choose_source_section_backgourd">#66CCDD</color>
     <color name="choose_source_item_backgourd">#FFFFFF</color>
-    <color name="choose_source_item_title">#AAAAAA</color>
+    <color name="choose_source_item_title">#4C4C4D</color>
     <color name="choose_source_button_backgroud">#FFFFFF</color>
     <color name="choose_source_button_text">#000000</color>
     <color name="choose_source_button_line">#DDDDDD</color>
     
     <!-- Color about add Source View -->
-    <color name="add_source_backgourd">#DDDDDD</color>
-    <color name="add_source_button_line">#DDDDDD</color>
+    <color name="add_source_backgourd">#DADBDB</color>
+    <color name="add_source_button_line">#DADBDB</color>
     
     <!-- Color about choose Waiting View -->
 	<color name="waiting_text">#AAAAAA</color>
+	
+	
+	<color name="black_overlay">#66000000</color>
 	
 </resources>

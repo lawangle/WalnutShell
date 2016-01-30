@@ -31,6 +31,9 @@
         <item android:id= "@+id/menu_alarm_once"
             android:title="alarm once"
         />
+        <item android:id= "@+id/menu_multiple_alarm"
+            android:title="multiple alarm"
+        />
             
         <item android:id="@+id/menu_da_clear"
 	     android:title="clear" />

@@ -24,6 +24,7 @@
     <string name="drawer_close">Close navigation drawer</string>
     <string name="action_websearch">Web search</string>
     <string name="app_not_available">Sorry, there\'s no web browser available</string>
+    <string name="menu_update_rightnow">立即更新</string>
     <string name="menu_show_menu">显示菜单</string>
     <string name="menu_no_image">无图模式</string>
     <string name="menu_add_source">添加源</string>
@@ -32,6 +33,8 @@
     <string name="menu_day_mode">日间模式</string>
     <string name="menu_offline_download">离线下载</string>
     <string name="menu_manage_newspaper">管理报刊</string>
+    <string name="menu_add_news">添加报刊</string>
+    <string name="menu_delete_news">删除报刊</string>
     <string name="menu_about">关于</string>
     <string name="menu_quit">退出</string>
     <string name="title_activity_article">文章1</string>
@@ -50,14 +53,43 @@
     <string name="delete_source">删除源</string>
     <string name="no_URL_input">您还没有输入目标网址</string>
     <string name="unknown_URL">您输入的目标网址格式不正确</string>
-    <string name="no_content_to_show">深感抱歉，原网页上无法解析出正文内容。\n核桃壳会尽快改进</string>
-    <string name="net_access_error">抱歉,您输入的网址无法访问...</string>
+    <string name="no_content_to_show">抱歉，没有内容可以显示。\n请检查你的网络或查看原网页</string>
+    <string name="net_access_error">抱歉,您输入的网址无法访问</string>
     <string name="net_error">网络不给力啦⊙﹏⊙b</string>
-    <string name="net_address_error">网络域名错误...</string>
+    <string name="net_address_error">网络域名错误</string>
     <string name="please_waiting">获取网页时间可能较长\n请耐心等待</string>
+    <string name="please_choose_one_source_at_least">请您先至少选择一个信息源来添加</string>
+    <string name="please_choose_target_newspaper">请您先选择一个报刊</string>
+    <string name="please_choose_one_source_to_delete">请您先选择一个信息源来删除</string>
+    <string name="add_news">添加报刊</string>
+    <string name="description">描述</string>
+    <string name="update">更新</string>
+    <string name="everyday">每日:</string>
+
+    <string-array name="frequence">
+        <item>1 次</item>
+        <item>2 次</item>
+        <item>3 次</item>
+        <item>4 次</item>
+        <item>5 次</item>
+    </string-array>
+    <string-array name="default_times">
+        <item>7:0</item>
+        <item>17:0</item>
+        <item>12:0</item>
+        <item>21:0</item>
+        <item>23:0</item>
+    </string-array>
+
+    <string name="time">时间</string>
+    <string name="name">名称:</string>
+    <string name="choose_update_time">更新时间</string>
+    <string name="not_be_named_yet">您还没有给报刊命名</string>
+
     <!-- <string name="title_activity_welcome">WelcomeActivity</string> -->
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
     <string name="title_activity_add_news">AddNewsActivity</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

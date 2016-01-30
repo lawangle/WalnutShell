@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="0,1" >
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/add_news_sec_button_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/default_title" />
+
+        <Button 
+            android:id="@+id/add_news_sec_button_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/default_title" />
+    </TableRow>
+
+</TableLayout>

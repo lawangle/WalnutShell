@@ -15,6 +15,7 @@ public class Entry implements Serializable{
 		this.href = href;
 		this.description = description;
 	}
+	
 	public Entry() {
 		// TODO Auto-generated constructor stub
 	}

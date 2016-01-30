@@ -33,7 +33,7 @@ public class ArticleActivity extends Activity {
 	public static String tag = "ArticleActivity";
 	public static String ARG_SOURCE_NAME = "source_name";
 	public static String ARG_ENTRY_URI = "entry_uri";
-
+	
 	Fragment currFragment;
 	PrepArticleTask patask = null;
 	@Override
@@ -101,6 +101,7 @@ public class ArticleActivity extends Activity {
 			// TODO Auto-generated method stub
 			DataBridge ab = new DataBridge(ArticleActivity.this);
 			ContentDetail cd = ab.getEntry(params[0]);
+			// 正文内容不存在
 			if (cd.content == null || cd.content.isEmpty()) {
 				com.creaty.walnutshell.fang.InternetInterface2 ii = new InterfaceImplement();
 				try {
@@ -110,9 +111,9 @@ public class ArticleActivity extends Activity {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
-				if ( !cd.content.isEmpty() ) {
+				if ( cd.content != null && !cd.content.isEmpty() ) {
 					ab.updateEntry(params[0], cd);
-					// 锟劫次伙拷取锟斤拷锟斤拷
+					// 再次获取正文
 					cd = ab.getEntry(params[0]);
 				}
 			}
@@ -132,7 +133,7 @@ public class ArticleActivity extends Activity {
 				currFragment = new NoContentFragment();
 			}
 			Toast.makeText( ArticleActivity.this, result.basicInfor.href, Toast.LENGTH_SHORT).show();
-			Log.d(tag, result.toString());
+			//Log.d(tag, result.toString());
 			FragmentManager fragmentManager = getFragmentManager();
 			fragmentManager.beginTransaction()
 					.replace(R.id.article_frame, currFragment).commit();
