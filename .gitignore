@@ -1,17 +1,2 @@
-.gradle/
 build/
 local.properties
-
-*.lock
-
-*.bin
-
-*.xml
-
-*.json
-
-*.class
-
-*.apk
-
-*.jar
