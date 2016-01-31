@@ -98,7 +98,6 @@ public class WelcomeActivity extends Activity implements AnimationListener {
 
 	@Override
 	public boolean onKeyDown(int keyCode, KeyEvent event) {
-		// �ڻ�ӭ��������BACK��
 		if (keyCode == KeyEvent.KEYCODE_BACK) {
 			return true;
 		}
