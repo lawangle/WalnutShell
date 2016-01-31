@@ -1,9 +1,7 @@
 package com.creaty.walnutshell;
 
-import java.util.Calendar;
 
 import com.creaty.walnutshell.alarm.AlarmFactory;
-import com.creaty.walnutshell.basic.DayTime;
 import com.creaty.walnutshell.content_provider.DataBridge;
 
 import android.os.AsyncTask;
@@ -19,12 +17,7 @@ import android.view.animation.Animation.AnimationListener;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
-/**
- * 欢迎界面
- * 
- * @author 小建枫叶
- * 
- */
+
 public class WelcomeActivity extends Activity implements AnimationListener {
 	public static final String tag = "WelcomeActivity";
 	private ImageView imageView = null;
@@ -47,10 +40,10 @@ public class WelcomeActivity extends Activity implements AnimationListener {
 
 		alphaAnimation = AnimationUtils.loadAnimation(this,
 				R.anim.welcome_alpha);
-		alphaAnimation.setFillEnabled(true); // 启动Fill保持
-		alphaAnimation.setFillAfter(true); // 设置动画的最后一帧是保持在View上面
+		alphaAnimation.setFillEnabled(true);
+		alphaAnimation.setFillAfter(true);
 		imageView.setAnimation(alphaAnimation);
-		alphaAnimation.setAnimationListener(this); // 为动画设置监听
+		alphaAnimation.setAnimationListener(this);
 	}
 
 	@Override
@@ -105,7 +98,7 @@ public class WelcomeActivity extends Activity implements AnimationListener {
 
 	@Override
 	public boolean onKeyDown(int keyCode, KeyEvent event) {
-		// 在欢迎界面屏蔽BACK键
+		// 锟节伙拷迎锟斤拷锟斤拷锟斤拷锟斤拷BACK锟斤拷
 		if (keyCode == KeyEvent.KEYCODE_BACK) {
 			return true;
 		}

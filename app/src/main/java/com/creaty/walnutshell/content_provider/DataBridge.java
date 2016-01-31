@@ -48,7 +48,7 @@ public class DataBridge {
 		Log.d(tag, "initNewspapers");
 		Cursor c = cr.query(NewsTableMetaData.CONTENT_URI, null, null, null,
 				null);
-		String[] name = { "ĞÂÎÅ", "IT", "Éú»î", "ÌåÓı", "Ê±ÉĞ", "¿ÆÑ§", "ÔÓÌ¸" };
+		String[] name = { "æ–°é—»", "äº’è”ç½‘", "ç”Ÿæ´»", "ä½“è‚²", "æ—¶å°š", "ç§‘å­¦", "æ‚è°ˆ" };
 		String[] alarm = mContext.getResources().getStringArray(
 				R.array.default_times);
 		// String alarmString = alarm[ 0 ] + alarm[ 1 ] + alarm[ 2 ];
@@ -70,7 +70,7 @@ public class DataBridge {
 
 	public void testUpdate1() {
 		PageDetail pd = new PageDetail();
-		pd.pageName = "36ë´";
+		pd.pageName = "36ï¿½";
 		pd.lastModifiedTime = System.currentTimeMillis();
 		Source s = new Source();
 		s.page_address = "http://www.36kr.com";
@@ -81,8 +81,8 @@ public class DataBridge {
 		s.entries = new ArrayList<Entry>();
 		ArrayList<Entry> en = s.entries;
 		for (int i = 0; i < 10; i++) {
-			en.add(new Entry(1, "ÌõÄ¿" + i, "www.dasfafews.coane/dasdas" + i,
-					"ÃèÊö" + i));
+			en.add(new Entry(1, "ï¿½ï¿½Ä¿" + i, "www.dasfafews.coane/dasdas" + i,
+					"ï¿½ï¿½ï¿½ï¿½" + i));
 		}
 		pd.ourSource = new ArrayList<Source>();
 		pd.ourSource.add(s);
@@ -112,8 +112,8 @@ public class DataBridge {
 		s.entries = new ArrayList<Entry>();
 		ArrayList<Entry> en = s.entries;
 		for (int i = 10; i < 20; i++) {
-			en.add(new Entry(1, "ÌõÄ¿" + i, "www.dasfafews.coane/dasdas" + i,
-					"ÃèÊö" + i));
+			en.add(new Entry(1, "ï¿½ï¿½Ä¿" + i, "www.dasfafews.coane/dasdas" + i,
+					"ï¿½ï¿½ï¿½ï¿½" + i));
 		}
 		Cursor c = cr.query(SourceTableMetaData.CONTENT_URI,
 				new String[] { SourceTableMetaData._ID }, null, null, null);
@@ -166,7 +166,7 @@ public class DataBridge {
 	public Uri addSource(int news_id, PageDetail page, Source source) {
 		Log.d(tag, "Adding a source");
 
-		// ¼ì²éÊÇ·ñÓĞÏàÍ¬Ô´
+		// ï¿½ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½ï¿½ï¿½Í¬Ô´
 		Cursor c = cr.query(SourceTableMetaData.CONTENT_URI,
 				new String[] { SourceTableMetaData._ID },
 				SourceTableMetaData.PAGE_ADDRESS + " LIKE '"
@@ -206,8 +206,8 @@ public class DataBridge {
 				// add entries
 				ArrayList<Entry> es = source.entries;
 				int size = es.size();
-				// °´ÕÕÍøÒ³ÄÚÈİÌõÄ¿Ò»°ãµÄ¸üĞÂµÄÊ±¼äË³Ğò£¬½ÏĞÂµÄÌõÄ¿ÔÚÉÏÃæ
-				// ËùÒÔÔöÌíÔ´µÄË³Ğò´ÓºóÏòÇ°
+				// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿Ò»ï¿½ï¿½Ä¸ï¿½ï¿½Âµï¿½Ê±ï¿½ï¿½Ë³ï¿½ò£¬½ï¿½ï¿½Âµï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+				// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô´ï¿½ï¿½Ë³ï¿½ï¿½Óºï¿½ï¿½ï¿½Ç°
 				for (int i = size - 1; i >= 0; i--) {
 					addEntry(source_id, es.get(i));
 				}
@@ -220,7 +220,7 @@ public class DataBridge {
 	public Uri addEntry(int source_id, Entry en) {
 		Log.d(tag, "Adding a entry");
 
-		// ¼ì²éÊÇ·ñÓĞÏàÍ¬entry
+		// ï¿½ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½ï¿½ï¿½Í¬entry
 		Cursor c = cr.query(EntryTableMetaData.CONTENT_URI,
 				new String[] { EntryTableMetaData._ID },
 				EntryTableMetaData.CONTENT_ADDRESS + " LIKE '" + en.href + "'",
@@ -248,7 +248,7 @@ public class DataBridge {
 	}
 
 	public Uri addLogo(String LogoAddress, int source_id) {
-		// ¼ì²éÊÇ·ñÓĞÒÑ¾­ÓĞLogo
+		// ï¿½ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½ï¿½Ñ¾ï¿½ï¿½ï¿½Logo
 		Cursor c = cr.query(LogoTableMetaData.CONTENT_URI,
 				new String[] { LogoTableMetaData._ID },
 				LogoTableMetaData.SOURCE_ID + " = " + source_id, null, null);
@@ -305,12 +305,12 @@ public class DataBridge {
 	}
 
 	/**
-	 * ¸üĞÂ±¨¿¯ÉèÖÃ
+	 * ï¿½ï¿½ï¿½Â±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	 * 
 	 * @param id
-	 *            ±¨¿¯id
+	 *            ï¿½ï¿½ï¿½ï¿½id
 	 * @param news
-	 *            ĞÂÉèÖÃºÃµÄ±¨¿¯
+	 *            ï¿½ï¿½ï¿½ï¿½ï¿½ÃºÃµÄ±ï¿½ï¿½ï¿½
 	 */
 	public void updateNewspaper(int id, Newspaper news) {
 
@@ -342,15 +342,15 @@ public class DataBridge {
 	}
 
 	/**
-	 * ¸üĞÂÔ´ÖĞ°üº¬µÄÌõÄ¿
+	 * ï¿½ï¿½ï¿½ï¿½Ô´ï¿½Ğ°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿
 	 * 
-	 * @return ¸üĞÂÌõÄ¿µÄÊıÄ¿
+	 * @return ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½Ä¿
 	 */
 	public int updateSource(int id, Source s) {
 		int nc = 0;
 		if (s != null && s.entries != null && !s.entries.isEmpty()) {
 
-			// ¸üĞÂSource
+			// ï¿½ï¿½ï¿½ï¿½Source
 			ContentValues cv = new ContentValues();
 			cv.put(SourceTableMetaData.MODIFIED_DATE,
 					System.currentTimeMillis());
@@ -360,10 +360,10 @@ public class DataBridge {
 
 			int size = s.entries.size();
 			Uri uri = null;
-			// °´ÕÕÍøÒ³ÄÚÈİÌõÄ¿Ò»°ãµÄ¸üĞÂµÄÊ±¼äË³Ğò£¬½ÏĞÂµÄÌõÄ¿ÔÚÉÏÃæ
-			// ËùÒÔÔöÌíÔ´µÄË³Ğò´ÓºóÏòÇ°
+			// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿Ò»ï¿½ï¿½Ä¸ï¿½ï¿½Âµï¿½Ê±ï¿½ï¿½Ë³ï¿½ò£¬½ï¿½ï¿½Âµï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+			// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô´ï¿½ï¿½Ë³ï¿½ï¿½Óºï¿½ï¿½ï¿½Ç°
 			for (int i = size - 1; i >= 0; i--) {
-				// ÒÑ¾­´æÔÚµÄentry½«²»»áÌí¼Ó
+				// ï¿½Ñ¾ï¿½ï¿½ï¿½ï¿½Úµï¿½entryï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 				if ((uri = addEntry(id, s.entries.get(i))) != null) {
 					nc++;
 				}
@@ -373,7 +373,7 @@ public class DataBridge {
 	}
 
 	/**
-	 * ¸üĞÂ×÷ÕßºÍÕıÎÄÄÚÈİ
+	 * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ßºï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	 */
 	public int updateEntry(Uri entryUri, ContentDetail cd) {
 		Entry en = cd.basicInfor;
@@ -391,7 +391,7 @@ public class DataBridge {
 		if (cd.content != null && !cd.content.isEmpty()){
 			cv.put(EntryTableMetaData.CONTENT,
 					ProviderUtils.contentListToString(cd.content));
-			//¸üĞÂÌõÄ¿ºó£¬Ó¦¸ÃÒÑ¾­ÔÄ¶Á
+			//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½Ó¦ï¿½ï¿½ï¿½Ñ¾ï¿½ï¿½Ä¶ï¿½
 			cv.put(EntryTableMetaData.IS_READ, 1);
 		}
 		cv.put(EntryTableMetaData.MODIFIED_DATE, System.currentTimeMillis());
@@ -645,7 +645,7 @@ public class DataBridge {
 		return cd;
 	}
 
-	// //Êı¾İ¿âÖ§³ÖµÄÎÄ¼ş¶ÁĞ´
+	// //ï¿½ï¿½ï¿½İ¿ï¿½Ö§ï¿½Öµï¿½ï¿½Ä¼ï¿½ï¿½ï¿½Ğ´
 	// public void setContent( ArrayList<String> content, Uri entryUri ){
 	// ContentResolver cr = mContext.getContentResolver();
 	// try {
